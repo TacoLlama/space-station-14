@@ -247,6 +247,14 @@
   files:
   - /Audio/Effects/Footsteps/borgwalk4.ogg
 
+#STARLIGHT
+- type: soundCollection
+  id: FootstepCargoBorg
+  files:
+  - /Audio/_Starlight/Effects/Footsteps/cargoborgwalk1.ogg
+  - /Audio/_Starlight/Effects/Footsteps/cargoborgwalk2.ogg
+  - /Audio/_Starlight/Effects/Footsteps/cargoborgwalk3.ogg
+
 - type: soundCollection
   id: FootstepHighHeels
   files:

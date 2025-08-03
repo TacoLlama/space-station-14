@@ -85,6 +85,58 @@
       - state: base-stripes-inhand-right
         color: "#593718"
 
+#STARLIGHT
+- type: entity
+  id: BaseBorgModuleMining
+  parent: BaseBorgModule
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - BorgModuleSalvage
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-icon-inhand-left
+        color: "#EBD8B7"
+      - state: base-module-inhand-left
+        color: "#613D1D"
+      - state: base-stripes-inhand-left
+        color: "#520079"
+      right:
+      - state: base-icon-inhand-right
+        color: "#EBD8B7"
+      - state: base-module-inhand-right
+        color: "#613D1D"
+      - state: base-stripes-inhand-right
+        color: "#520079"
+
+#STARLIGHT
+- type: entity
+  id: BaseBorgModuleHauling
+  parent: BaseBorgModule
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - BorgModuleHauling
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-icon-inhand-left
+        color: "#EBD8B7"
+      - state: base-module-inhand-left
+        color: "#613D1D"
+      - state: base-stripes-inhand-left
+        color: "#cbb036"
+      right:
+      - state: base-icon-inhand-right
+        color: "#EBD8B7"
+      - state: base-module-inhand-right
+        color: "#613D1D"
+      - state: base-stripes-inhand-right
+        color: "#cbb036"
+
 - type: entity
   id: BaseBorgModuleEngineering
   parent: BaseBorgModule
@@ -494,12 +546,12 @@
 
 - type: entity
   id: BorgModuleMining
-  parent: [ BaseBorgModuleCargo, BaseProviderBorgModule ]
+  parent: [ BaseBorgModuleMining, BaseProviderBorgModule ] #STARLIGHT
   name: mining cyborg module
   components:
   - type: Sprite
     layers:
-    - state: cargo
+    - state: salvage #STARLIGHT
     - state: icon-mining
   - type: ItemBorgModule
     items:
@@ -513,13 +565,13 @@
 
 - type: entity
   id: BorgModuleAdvancedMining
-  parent: [ BaseBorgModuleCargo, BaseProviderBorgModule ]
+  parent: [ BaseBorgModuleMining, BaseProviderBorgModule ] #STARLIGHT
   name: advanced mining cyborg module
   description: Advanced cargo module containing advanced mining equipment. Studies show it advances productivity of a cyborg by 150%.
   components:
   - type: Sprite
     layers:
-    - state: cargo
+    - state: salvage #STARLIGHT
     - state: icon-mining-adv
   - type: ItemBorgModule
     items:
@@ -548,6 +600,27 @@
     - HandHeldMassScannerBorg
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: grappling-module }
+
+#STARLIGHT
+- type: entity
+  id: BorgModuleMats
+  parent: [ BaseBorgModuleHauling, BaseProviderBorgModule ]
+  name: hauling cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: hauling
+    - state: icon-mats
+  - type: ItemBorgModule
+    items:
+    - BorgHold
+    - BorgHold
+    - SheetSteelLingering0
+    - SheetPlasticLingering0
+    - SheetGlassLingering0
+    - SheetPlasteelLingering0
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: mats-module }
 
 # engineering modules
 - type: entity

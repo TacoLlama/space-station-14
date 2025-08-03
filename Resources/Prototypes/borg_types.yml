@@ -225,3 +225,44 @@
   # Pet
   petSuccessString: petting-success-service-cyborg
   petFailureString: petting-failure-service-cyborg
+
+#STARLIGHT
+# Cargo borg
+- type: borgType
+  id: cargo
+
+  # Description
+  dummyPrototype: BorgChassisCargo
+
+  # Functional
+  extraModuleCount: 3
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleCargo
+    - BorgModuleHauling
+
+  defaultModules:
+  - BorgModuleTool
+  - BorgModuleAppraisal
+  - BorgModuleTraversal
+  - BorgModuleMats
+
+  radioChannels:
+  - Supply
+  - Science
+
+  # Visual
+  inventoryTemplateId: borgTall
+  spriteBodyState: cargo
+  spriteHasMindState: cargo_e
+  spriteNoMindState: cargo_e_r
+  spriteToggleLightState: cargo_l
+
+  # Pet
+  petSuccessString: petting-success-cargo-cyborg
+  petFailureString: petting-failure-cargo-cyborg
+
+  # Sounds
+  footstepCollection:
+    collection: FootstepCargoBorg
