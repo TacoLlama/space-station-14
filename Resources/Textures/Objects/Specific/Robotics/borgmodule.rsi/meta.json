@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC0-1.0",
-    "copyright": "Created by EmoGarbage404 (github) for Space Station 14. icon-construction.png created by deltanedas (github). syndicateborgbomb.png created by Mangohydra (github). layered inhands by mubururu_ (github), icon-chem.png & icon-mining-adv.png created by mubururu_ (github), Xenoborg modules sprites by Samuka-C (github), icon-mats, hauling and salvage module bases created for Starlight by TacoLlama (github)",
+    "copyright": "Created by EmoGarbage404 (github) for Space Station 14. icon-construction.png created by deltanedas (github). syndicateborgbomb.png created by Mangohydra (github). layered inhands by mubururu_ (github), icon-chem.png & icon-mining-adv.png created by mubururu_ (github), Xenoborg modules sprites by Samuka-C (github)",
     "size": {
         "x": 32,
         "y": 32
@@ -17,16 +17,10 @@
             "name": "generic"
         },
         {
-            "name": "hauling"
-        },
-        {
             "name": "icon-anomalies"
         },
         {
             "name": "icon-appraisal"
-        },
-        {
-            "name": "icon-mats"
         },
         {
             "name": "icon-artifacts"
@@ -168,9 +162,6 @@
         },
         {
             "name": "security"
-        },
-        {
-            "name": "salvage"
         },
         {
             "name": "service"

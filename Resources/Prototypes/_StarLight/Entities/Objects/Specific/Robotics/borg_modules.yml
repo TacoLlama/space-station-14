@@ -1,0 +1,41 @@
+- type: entity
+  id: BaseBorgModuleSupply
+  parent: BaseBorgModule
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - BorgModuleHauling
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-icon-inhand-left
+        color: "#EBD8B7"
+      - state: base-module-inhand-left
+        color: "#613D1D"
+      - state: base-stripes-inhand-left
+        color: "#cbb036"
+      right:
+      - state: base-icon-inhand-right
+        color: "#EBD8B7"
+      - state: base-module-inhand-right
+        color: "#613D1D"
+      - state: base-stripes-inhand-right
+        color: "#cbb036"
+
+- type: entity
+  id: BorgModuleMats
+  parent: [ BaseBorgModuleSupply, BaseProviderBorgModule ]
+  name: hauling cyborg module
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Specific/Robotics/borgmodule.rsi
+    layers:
+    - state: hauling
+    - state: icon-mats
+  - type: ItemBorgModule
+    items:
+    - BorgHold
+    - BorgHold
+  - type: BorgModuleIcon
+    icon: { sprite: _Starlight/Interface/Actions/actions_borg.rsi, state: mats-module }

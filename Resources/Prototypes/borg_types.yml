@@ -80,6 +80,7 @@
     tags:
     - BorgModuleGeneric
     - BorgModuleCargo
+    - BorgModuleSalvage #STARLIGHT
 
   defaultModules:
   - BorgModuleTool
@@ -245,7 +246,6 @@
   defaultModules:
   - BorgModuleTool
   - BorgModuleAppraisal
-  - BorgModuleTraversal
   - BorgModuleMats
 
   radioChannels:
