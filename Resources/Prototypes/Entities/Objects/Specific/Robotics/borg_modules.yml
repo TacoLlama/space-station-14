@@ -617,8 +617,6 @@
     - BorgHold
     - SheetSteelLingering0
     - SheetPlasticLingering0
-    - SheetGlassLingering0
-    - SheetPlasteelLingering0
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: mats-module }
 
