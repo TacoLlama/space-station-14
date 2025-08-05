@@ -51,16 +51,6 @@
   - type: BorgSwitchableType
     selectedBorgType: mining
 
-#STARLIGHT
-- type: entity
-  id: BorgChassisCargo
-  parent: BorgChassisSelectable
-  name: cargo cyborg
-  components:
-  - type: TextToSpeech
-  - type: BorgSwitchableType
-    selectedBorgType: cargo
-
 - type: entity
   id: BorgChassisEngineer
   parent: BorgChassisSelectable
