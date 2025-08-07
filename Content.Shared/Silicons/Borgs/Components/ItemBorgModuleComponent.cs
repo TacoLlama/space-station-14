@@ -17,10 +17,22 @@ public sealed partial class ItemBorgModuleComponent : Component
     public List<EntProtoId> Items = new();
 
     /// <summary>
+    /// The number of "traditional" hands to provide
+    /// </summary>
+    [DataField]
+    public int FreeHands = 0;
+
+    /// <summary>
     /// The entities from <see cref="Items"/> that were spawned.
     /// </summary>
     [DataField("providedItems")]
     public SortedDictionary<string, EntityUid> ProvidedItems = new();
+
+    /// <summary>
+    /// List of provided free hand IDs
+    /// </summary>
+    [DataField]
+    public List<string> ProvidedFreeHands = new();
 
     /// <summary>
     /// A counter that ensures a unique
