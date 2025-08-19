@@ -205,16 +205,6 @@
   - type: Stack
     count: 1
 
-#STARLIGHT
-- type: entity
-  parent: SheetPlastic
-  id: SheetPlasticLingering0
-  suffix: Lingering, 0
-  components:
-  - type: Stack
-    lingering: true
-    count: 0
-
 - type: entity
   parent: [SheetOtherBase, EdibleBase]
   id: SheetUranium

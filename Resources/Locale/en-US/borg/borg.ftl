@@ -49,11 +49,6 @@ borg-type-mining-name = Salvage
 borg-type-mining-desc = Join salvage and help them mine for materials, scavenge wrecks, and fight off hostile wildlife.
 borg-type-mining-transponder = salvage cyborg
 
-# STARLIGHT
-borg-type-cargo-name = Cargo
-borg-type-cargo-desc = Haul cargo, deliver orders, and make the station rich!
-borg-type-cargo-transponder = cargo cyborg
-
 borg-type-janitor-name = Janitor
 borg-type-janitor-desc = Keep the station nice and tidy, clean up spills, collect and properly dispose of trash left around by lazy crewmembers.
 borg-type-janitor-transponder = janitor cyborg

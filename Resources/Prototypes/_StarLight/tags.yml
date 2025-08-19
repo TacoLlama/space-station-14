@@ -3,7 +3,6 @@
 - type: Tag
   id: Arachnid
 
-
 - type: Tag
   id: Avali
 
@@ -15,6 +14,12 @@
 
 - type: Tag
   id: BladeSteel
+
+- type: Tag
+  id: BorgModuleHauling
+
+- type: Tag
+  id: BorgModuleSalvage
 
 - type: Tag
   id: CantInteract

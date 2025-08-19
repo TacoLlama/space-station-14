@@ -125,12 +125,6 @@
 - type: Tag
   id: BorgModuleCargo
 
-- type: Tag #STARLIGHT
-  id: BorgModuleSalvage
-
-- type: Tag #STARLIGHT
-  id: BorgModuleHauling
-
 - type: Tag
   id: BorgModuleEngineering
 
