@@ -1,0 +1,1 @@
+borg-slot-bounty-empty = Bounties and Slips

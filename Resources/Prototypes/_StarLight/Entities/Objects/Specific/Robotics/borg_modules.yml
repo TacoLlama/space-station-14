@@ -49,6 +49,20 @@
         color: "#cbb036"
 
 - type: entity
+  id: BorgModuleBountyPaperPlaceholder
+  parent: BaseItem
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    layers:
+    - state: paper
+      color: "#f7e574"
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      color: "#f7e574"
+      visible: true
+
+- type: entity
   id: BorgModuleMats
   parent: [ BaseBorgModuleSupply, BaseProviderBorgModule ]
   name: hauling cyborg module
@@ -59,8 +73,20 @@
     - state: hauling
     - state: icon-mats
   - type: ItemBorgModule
-    items:
-    - BorgHold
-    - BorgHold
+    hands:
+    - item: BorgHold
+    - item: BorgHold
+    - hand:
+        emptyRepresentative: BorgModuleConstructionMaterialPlaceholder
+        emptyLabel: borg-slot-construction-empty
+        whitelist:
+          tags:
+          - ConstructionMaterial
+    - hand:
+        emptyRepresentative: BorgModuleBountyPaperPlaceholder
+        emptyLabel: borg-slot-bounty-empty
+        whitelist:
+          tags:
+          - Document
   - type: BorgModuleIcon
     icon: { sprite: _Starlight/Interface/Actions/actions_borg.rsi, state: mats-module }
