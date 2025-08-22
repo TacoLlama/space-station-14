@@ -50,6 +50,7 @@
 
 - type: entity
   id: BorgModuleBountyPaperPlaceholder
+  categories: [ HideSpawnMenu ]
   parent: BaseItem
   components:
   - type: Sprite
@@ -90,3 +91,37 @@
           - Document
   - type: BorgModuleIcon
     icon: { sprite: _Starlight/Interface/Actions/actions_borg.rsi, state: mats-module }
+
+- type: entity
+  id: BorgModuleMailPlaceholder
+  categories: [ HideSpawnMenu ]
+  parent: BaseItem
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Cargo/mail.rsi
+    layers: 
+    - state: icon
+    - state: postmark
+    - state: locked
+
+- type: entity
+  id: BorgModuleMail
+  parent: [ BaseBorgModuleSupply, BaseProviderBorgModule ]
+  name: mail cyborg module
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Specific/Robotics/borgmodule.rsi
+    layers:
+    - state: hauling
+    - state: icon-mail
+  - type: ItemBorgModule
+    hands:
+    - item: BorgMailBag
+    - hand:
+        emptyRepresentative: BorgModuleMailPlaceholder
+        emptyLabel: borg-slot-mail-empty
+        whitelist:
+          components:
+          - Delivery
+  - type: BorgModuleIcon
+    icon: { sprite: _Starlight/Interface/Actions/actions_borg.rsi, state: mail-module }

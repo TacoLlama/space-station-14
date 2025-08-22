@@ -17,6 +17,7 @@
   - BorgModuleTool
   - BorgModuleAppraisal
   - BorgModuleMats
+  - BorgModuleMail
 
   radioChannels:
   - Supply

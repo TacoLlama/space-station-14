@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "mats-module by TacoLlama (github)",
+    "copyright": "mats-module and mail-module by TacoLlama (github)",
     "size": {
         "x": 32,
         "y": 32
@@ -9,6 +9,9 @@
     "states": [
         {
             "name":"mats-module"
+        },
+        {
+            "name":"mail-module"
         }
     ]
 }
