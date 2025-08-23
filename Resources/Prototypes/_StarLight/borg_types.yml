@@ -25,7 +25,7 @@
 
   # Visual
   inventoryTemplateId: borgTall
-  spritePath: Mobs/Silicon/Chassis/generic.rsi
+  spritePath: _Starlight/Mobs/Silicon/Chassis/cargo.rsi
 
   # Pet
   petSuccessString: petting-success-cargo-cyborg
