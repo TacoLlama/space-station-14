@@ -255,7 +255,7 @@
 # The actual brain inside the core
 - type: entity
   id: StationAiBrain
-  parent: [ PositronicBrain, BaseSiliconLanguages ] # Starlight languages
+  parent: PositronicBrain
   categories: [ HideSpawnMenu, DoNotMap ]
   components:
   - type: Sprite
