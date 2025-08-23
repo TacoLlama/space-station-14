@@ -25,10 +25,7 @@
 
   # Visual
   inventoryTemplateId: borgTall
-  spriteBodyState: cargo
-  spriteHasMindState: cargo_e
-  spriteNoMindState: cargo_e_r
-  spriteToggleLightState: cargo_l
+  spritePath: Mobs/Silicon/Chassis/generic.rsi
 
   # Pet
   petSuccessString: petting-success-cargo-cyborg
