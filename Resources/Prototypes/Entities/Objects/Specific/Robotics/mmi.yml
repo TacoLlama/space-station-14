@@ -84,15 +84,6 @@
   name: positronic brain
   description: An artificial brain capable of spontaneous neural activity.
   components:
-  # Starlight-start: Languages
-    - type: LanguageKnowledge
-      speaks:
-      - GalacticCommon
-      - Machine
-      understands:
-      - GalacticCommon
-      - Machine
-  # Starlight-end
     - type: Sprite
       sprite: Objects/Specific/Robotics/mmi.rsi
       layers:
