@@ -82,6 +82,7 @@
   - type: ShowJobIcons
   #region Starlight
   - type: StationAIShuntable
+  - type: ContentEye
   #endregion Starlight
 
 - type: entity
@@ -363,7 +364,7 @@
   - type: Visibility
     layer: 32768
   - type: Sprite
-    sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+    sprite: Mobs/Silicon/station_ai.rsi
     layers:
     - state: ai_camera
 
