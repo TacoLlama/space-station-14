@@ -82,7 +82,6 @@
   - type: ShowJobIcons
   #region Starlight
   - type: StationAIShuntable
-  - type: ContentEye
   #endregion Starlight
 
 - type: entity
@@ -152,7 +151,7 @@
     layers:
     - state: base
     - state: full
-      map: ["unshaded"]
+      map: ["enum.StationAiVisualState.Key"]
       shader: unshaded
   - type: Appearance
   - type: GenericVisualizer
@@ -313,6 +312,7 @@
   - type: NameIdentifier
     group: StationAi
     #region Starlight
+  - type: ContentEye
   - type: IonStormTarget
     chance: 0.6 # lets just try it at 3/4th the chance of a borg and see how bad it gets
   # Starlight-start: Languages
