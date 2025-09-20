@@ -192,10 +192,13 @@
   defaultModules:
   - BorgModuleTool
   - BorgModuleMusique
-  - BorgModuleService
   - BorgModuleClowning
-  - BorgModuleGardening
-  - BorgModuleHarvesting
+  # Starlight start 
+  - BorgModuleBooks
+  - BorgModuleBartending
+  - BorgModuleBotany
+  - BorgModuleCooking
+  # Starlight end
   radioChannels:
   - Science
   - Service

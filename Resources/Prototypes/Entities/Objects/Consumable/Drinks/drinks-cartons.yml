@@ -47,6 +47,9 @@
   - type: TrashOnSolutionEmpty
     solution: drink
   - type: DnaSubstanceTrace
+  - type: Tag
+    tags:
+    - DrinkCarton #Starlight
 
 - type: entity
   parent: DrinkCartonBaseFull
