@@ -1,5 +1,6 @@
 using Content.Shared.Holopad;
 using Robust.Shared.Prototypes;
+using Content.Shared.Intellicard;
 
 namespace Content.Shared.Silicons.StationAi;
 
@@ -72,6 +73,29 @@ public abstract partial class SharedStationAiSystem
             !stationAiCustomization.ProtoIds.TryGetValue(_stationAiCoreCustomGroupProtoId, out var protoId) ||
             !_protoManager.Resolve(protoId, out var prototype) ||
             !prototype.LayerData.TryGetValue(state.ToString(), out var layerData))
+        {
+            return;
+        }
+
+        // This data is handled manually in the client StationAiSystem
+        _appearance.SetData(entity.Owner, StationAiVisualState.Key, layerData);
+    }
+
+    private void CustomizeIntellicardAppearance(Entity<IntellicardComponent> entity)
+    {
+        if (!TryComp<StationAiHolderComponent>(entity.Owner, out var stationAi))
+            return;
+
+        if (!stationAi.Slot.Item.HasValue)
+        {
+            _appearance.RemoveData(entity.Owner, StationAiVisualState.Key);
+            return;
+        }
+
+        if (!TryComp<StationAiCustomizationComponent>(stationAi.Slot.Item, out var stationAiCustomization) ||
+            !stationAiCustomization.ProtoIds.TryGetValue(_stationAiCoreCustomGroupProtoId, out var protoId) ||
+            !_protoManager.Resolve(protoId, out var prototype) ||
+            !prototype.LayerData.TryGetValue("Intellicard", out var layerData))
         {
             return;
         }

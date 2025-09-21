@@ -503,6 +503,9 @@
     Dead:
       sprite: _Starlight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
+    Intellicard:
+      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      state: fox
 
 - type: stationAiCustomization
   parent: StationAiIconBase

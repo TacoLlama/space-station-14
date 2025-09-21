@@ -255,7 +255,7 @@ public abstract partial class SharedStationAiSystem : EntitySystem
                 RaiseLocalEvent(shuntable.Inhabited.Value, returnEvent);
             }
         //#endregion Starlight
-        
+
         // Try to insert our thing into them
         if (_slots.CanEject(ent.Owner, args.User, ent.Comp.Slot))
         {
@@ -560,15 +560,20 @@ public abstract partial class SharedStationAiSystem : EntitySystem
 			}
 		}
 
-		// If the entity is a station AI core, attempt to customize its appearance
-		if (TryComp<StationAiCoreComponent>(entity, out var stationAiCore))
+        // If the entity is a station AI core, attempt to customize its appearance
+        if (TryComp<StationAiCoreComponent>(entity, out var stationAiCore))
         {
             CustomizeAppearance((entity, stationAiCore), state);
             return;
         }
+        else if (TryComp<IntellicardComponent>(entity, out var intellicard) && state == StationAiState.Occupied)
+        {
+            CustomizeIntellicardAppearance((entity, intellicard));
+            return;
+        }
 
         // Otherwise let generic visualizers handle the appearance update
-        _appearance.SetData(entity.Owner, StationAiVisualState.Key, state);
+            _appearance.SetData(entity.Owner, StationAiVisualState.Key, state);
     }
 
     public virtual bool SetVisionEnabled(Entity<StationAiVisionComponent> entity, bool enabled, bool announce = false)
