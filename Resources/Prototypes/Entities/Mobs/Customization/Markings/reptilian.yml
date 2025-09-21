@@ -129,6 +129,7 @@
 - type: marking
   id: LizardTailSmooth
   bodyPart: Tail
+  waggingId: LizardTailSmoothAnimated # Starlight
   markingCategory: Tail
   speciesRestriction: [Reptilian]
   sprites:
@@ -140,6 +141,7 @@
 - type: marking
   id: LizardTailLarge
   bodyPart: Tail
+  waggingId: LizardTailLargeAnimated # Starlight
   markingCategory: Tail
   speciesRestriction: [Reptilian]
   sprites:
@@ -149,6 +151,7 @@
 - type: marking
   id: LizardTailSpikes
   bodyPart: Tail
+  waggingId: LizardTailSpikesAnimated # Starlight
   markingCategory: Tail
   speciesRestriction: [Reptilian]
   sprites:
@@ -158,6 +161,7 @@
 - type: marking
   id: LizardTailLTiger
   bodyPart: Tail
+  waggingId: LizardTailLTigerAnimated # Starlight
   markingCategory: Tail
   speciesRestriction: [Reptilian]
   sprites:
@@ -167,6 +171,7 @@
 - type: marking
   id: LizardTailDTiger
   bodyPart: Tail
+  waggingId: LizardTailDTigerAnimated # Starlight
   markingCategory: Tail
   speciesRestriction: [Reptilian]
   sprites:
@@ -176,6 +181,7 @@
 - type: marking
   id: LizardTailAquatic
   bodyPart: Tail
+  waggingId: LizardTailAquaticAnimated # Starlight
   markingCategory: Tail
   speciesRestriction: [Reptilian]
   sprites:
