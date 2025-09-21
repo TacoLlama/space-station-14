@@ -252,6 +252,18 @@
           components:
           - FitsInDispenser
     - hand:
+        emptyLabel: borg-slot-food-empty
+        emptyRepresentative: FoodNoodles
+        whitelist:
+          components:
+          - Edible
+        blacklist:
+          tags:
+          - Crayon
+          components:
+          - Clothing
+          - Organ
+    - hand:
         emptyLabel: borg-slot-dinnerware-empty
         emptyRepresentative: FoodPlate
         whitelist:
