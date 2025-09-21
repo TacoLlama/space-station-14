@@ -368,6 +368,7 @@
   id: LizardTailSmoothAnimated
   bodyPart: Tail
   markingCategory: Tail
+  staticId: LizardTailSmooth # Starlight
   speciesRestriction: []
   sprites:
     - sprite: Mobs/Customization/reptilian_parts.rsi
@@ -379,6 +380,7 @@
   id: LizardTailLargeAnimated
   bodyPart: Tail
   markingCategory: Tail
+  staticId: LizardTailLarge # Starlight
   speciesRestriction: []
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
@@ -388,6 +390,7 @@
   id: LizardTailSpikesAnimated
   bodyPart: Tail
   markingCategory: Tail
+  staticId: LizardTailSpikes # Starlight
   speciesRestriction: []
   sprites:
     - sprite: Mobs/Customization/reptilian_parts.rsi
@@ -397,6 +400,7 @@
   id: LizardTailLTigerAnimated
   bodyPart: Tail
   markingCategory: Tail
+  staticId: LizardTailLTiger # Starlight
   speciesRestriction: []
   sprites:
     - sprite: Mobs/Customization/reptilian_parts.rsi
@@ -406,6 +410,7 @@
   id: LizardTailDTigerAnimated
   bodyPart: Tail
   markingCategory: Tail
+  staticId: LizardTailDTiger # Starlight
   speciesRestriction: []
   sprites:
     - sprite: Mobs/Customization/reptilian_parts.rsi
@@ -415,6 +420,7 @@
   id: LizardTailAquaticAnimated
   bodyPart: Tail
   markingCategory: Tail
+  staticId: LizardTailAquatic # Starlight
   speciesRestriction: []
   sprites:
     - sprite: Mobs/Customization/reptilian_parts.rsi
