@@ -253,7 +253,7 @@
           - FitsInDispenser
     - hand:
         emptyLabel: borg-slot-food-empty
-        emptyRepresentative: FoodNoodles
+        emptyRepresentative: FoodBreakfastAmerican
         whitelist:
           components:
           - Edible
