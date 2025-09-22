@@ -197,13 +197,28 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 400
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: [ "Breakage" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 2000
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: DamageVisuals
+    thresholds: [25, 50, 75, 100, 200, 300, 400]
+    damageDivisor: 4
+    trackAllDamage: true
+    damageOverlay:
+      sprite: Mobs/Silicon/station_ai_cracks.rsi
   - type: ApcPowerReceiver
     powerLoad: 1000
     needsPower: false
