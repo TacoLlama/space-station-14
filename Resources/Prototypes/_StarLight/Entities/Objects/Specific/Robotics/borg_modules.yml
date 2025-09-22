@@ -100,7 +100,7 @@
   - type: Sprite
     layers:
     - state: service
-    - state: icon-template #resprite this
+    - state: icon-bartending
   - type: ItemBorgModule
     hands:
     - item: Syringe
@@ -134,7 +134,7 @@
           - DrinkBottle
           - DrinkCarton
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: service-module } #resprite this, maybe?
+    icon: { sprite: _Starlight/Interface/Actions/actions_borg.rsi, state: bartending-module }
 
 - type: entity
   id: BorgModuleBooks
@@ -175,7 +175,7 @@
     - item: RubberStampApproved
     - item: RubberStampDenied
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: service-module } #resprite this
+    icon: { sprite: _Starlight/Interface/Actions/actions_borg.rsi, state: bookkeeping-module }
 
 - type: entity
   id: BorgModuleBotany
@@ -225,7 +225,7 @@
   - type: Sprite
     layers:
     - state: service
-    - state: icon-template #resprite this
+    - state: icon-cooking
   - type: ItemBorgModule
     hands:
     - item: Syringe
@@ -272,4 +272,4 @@
           - Skewer
 
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: service-module } #resprite this
+    icon: { sprite: _Starlight/Interface/Actions/actions_borg.rsi, state: cooking-module }
