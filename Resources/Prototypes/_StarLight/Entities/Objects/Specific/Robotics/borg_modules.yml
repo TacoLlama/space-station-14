@@ -103,7 +103,6 @@
     - state: icon-bartending
   - type: ItemBorgModule
     hands:
-    - item: Syringe
     - item: DrinkGlass
       hand:
         emptyLabel: borg-slot-small-containers-empty
@@ -125,6 +124,7 @@
         whitelist:
           components:
           - FitsInDispenser
+    - item: Syringe
     - item: BarSpoon
     - hand:
         emptyLabel: borg-slot-bottles-empty
@@ -148,18 +148,6 @@
   - type: ItemBorgModule
     hands:
     - item: Pen
-    - item: BooksBag
-    - hand:
-        emptyLabel: borg-slot-documents-empty
-        emptyRepresentative: BookBase
-        whitelist:
-          tags:
-          - Book
-          - Dice
-          - Document
-          - Figurine
-          - TabletopBoard
-          - Write
     - hand:
         emptyLabel: borg-slot-documents-empty
         emptyRepresentative: Paper
@@ -171,6 +159,18 @@
           - Figurine
           - TabletopBoard
           - Write
+    - hand:
+        emptyLabel: borg-slot-documents-empty
+        emptyRepresentative: BookBase
+        whitelist:
+          tags:
+          - Book
+          - Dice
+          - Document
+          - Figurine
+          - TabletopBoard
+          - Write
+    - item: BooksBag
     - item: HandLabeler
     - item: RubberStampApproved
     - item: RubberStampDenied
@@ -229,8 +229,13 @@
   - type: ItemBorgModule
     hands:
     - item: Syringe
-    - item: KitchenKnife
-    - item: RollingPin
+    - item: Beaker
+      hand:
+        emptyLabel: borg-slot-small-containers-empty
+        emptyRepresentative: Beaker
+        whitelist:
+          components:
+          - FitsInDispenser
     - hand:
         emptyLabel: borg-slot-ingredient-empty
         emptyRepresentative: ReagentContainerFlour
@@ -244,17 +249,13 @@
           - DrinkCarton
           components:
           - Produce
-    - item: Beaker
-      hand:
-        emptyLabel: borg-slot-small-containers-empty
-        emptyRepresentative: Beaker
-        whitelist:
-          components:
-          - FitsInDispenser
     - hand:
         emptyLabel: borg-slot-food-empty
         emptyRepresentative: FoodBreakfastAmerican
         whitelist:
+          tags:
+          - Dinnerware
+          - Skewer
           components:
           - Edible
         blacklist:
@@ -263,13 +264,15 @@
           components:
           - Clothing
           - Organ
-    - hand:
-        emptyLabel: borg-slot-dinnerware-empty
-        emptyRepresentative: FoodPlate
-        whitelist:
-          tags:
-          - Dinnerware
-          - Skewer
+    # - hand:
+    #     emptyLabel: borg-slot-dinnerware-empty
+    #     emptyRepresentative: FoodPlate
+    #     whitelist:
+    #       tags:
+    #       - Dinnerware
+    #       - Skewer
+    - item: KitchenKnife
+    - item: RollingPin
 
   - type: BorgModuleIcon
     icon: { sprite: _Starlight/Interface/Actions/actions_borg.rsi, state: cooking-module }

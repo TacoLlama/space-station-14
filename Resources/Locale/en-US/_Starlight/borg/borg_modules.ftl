@@ -8,5 +8,4 @@ borg-slot-bottles-empty = Bottles
 borg-slot-swabs-empty = Swabs
 borg-slot-produce-empty = Produce
 borg-slot-ingredient-empty = Ingredients
-borg-slot-dinnerware-empty = Plates and Tins
-borg-slot-food-empty = Food
+borg-slot-food-empty = Food and Dinnerware
