@@ -1,0 +1,43 @@
+- type: entity
+  id: TowerOfBabel
+  parent: BaseStructure
+  description: Me Grug. You?. <unintelligible>
+  components:
+    - type: Sprite
+      sprite: _Starlight/Structures/tower_of_babel.rsi
+      offset: 0,0.5
+      noRot: true
+      layers: 
+      - state: babel_1
+        map: ["enum.TowerOfBabelLayers.Tower"]
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 600
+        behaviors:
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalSlam
+      - trigger:
+          !type:DamageTrigger
+          damage: 400
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalSlam
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: StructuralMetallicStrong
+    - type: DamageVisuals
+      thresholds: [150, 300]
+      trackAllDamage: true
+      targetLayers: 
+        - enum.TowerOfBabelLayers.Tower
+      damageOverlay:
+        sprite: _Starlight/Structures/tower_of_babel.rsi
+    
