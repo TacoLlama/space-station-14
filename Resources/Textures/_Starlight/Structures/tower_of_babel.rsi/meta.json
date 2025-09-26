@@ -4,17 +4,17 @@
     "x": 32,
     "y": 64
   },
-  "copyright": "Taked From Paradise Station",
+  "copyright": "Drawn by Conflee for Starlight",
   "license": "CC-BY-SA-3.0",
   "states": [
     {
-      "name": "babel_1"
+      "name": "Tower_0"
     },
     {
-      "name": "babel_2"
+      "name": "Tower_150"
     },
     {
-      "name": "babel_3"
+      "name": "Tower_300"
     }
   ]
 }

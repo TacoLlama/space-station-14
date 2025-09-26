@@ -8,8 +8,11 @@
       offset: 0,0.5
       noRot: true
       layers: 
-      - state: babel_1
-        map: ["enum.TowerOfBabelLayers.Tower"]
+        - state: Tower_0
+          map: ["enum.TowerOfBabelLayers.Tower"]
+    - type: Icon
+      sprite: _Starlight/Structures/tower_of_babel.rsi
+      state: babel_1
     - type: Destructible
       thresholds:
       - trigger:
@@ -27,17 +30,37 @@
         behaviors:
         - !type:PlaySoundBehavior
           sound:
-            collection: MetalSlam
+            path: /Audio/Effects/break_stone.ogg
+            params:
+              volume: -6
         - !type:DoActsBehavior
           acts: ["Destruction"]
+      - trigger:
+          !type:DamageTrigger
+          damage: 300
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            path: /Audio/Effects/break_stone.ogg
+            params:
+              volume: -6
+      - trigger:
+          !type:DamageTrigger
+          damage: 150
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            path: /Audio/Effects/break_stone.ogg
+            params:
+              volume: -6
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: StructuralMetallicStrong
+    - type: Appearance
     - type: DamageVisuals
-      thresholds: [150, 300]
+      thresholds: [0, 150, 300]
       trackAllDamage: true
+      overlay: false
       targetLayers: 
         - enum.TowerOfBabelLayers.Tower
-      damageOverlay:
-        sprite: _Starlight/Structures/tower_of_babel.rsi
     
