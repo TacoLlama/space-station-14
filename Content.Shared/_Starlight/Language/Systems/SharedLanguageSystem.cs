@@ -9,7 +9,7 @@ using Content.Shared.Zombies;
 
 namespace Content.Shared._Starlight.Language.Systems;
 
-public abstract class SharedLanguageSystem : EntitySystem
+public abstract partial class SharedLanguageSystem : EntitySystem
 {
     /// <summary>
     ///     The language used as a fallback in cases where an entity suddenly becomes a Language Speaker (e.g. the usage of make-sentient).
@@ -37,14 +37,19 @@ public abstract class SharedLanguageSystem : EntitySystem
 
     private void OnClone(Entity<LanguageKnowledgeComponent> ent, ref CloningEvent ev)
     {
-        if (HasComp<ZombieComponent>(ent))
-            return; //if we were zombified cloning will revert this so we dont clone the zed language 
         if (!ev.Settings.EventComponents.Contains(Factory.GetRegistration(ent.Comp.GetType()).Name))
             return;
         var clone = ev.CloneUid;
         var comp = EnsureComp<LanguageKnowledgeComponent>(ev.CloneUid);
-        comp.SpokenLanguages = ent.Comp.SpokenLanguages;
-        comp.UnderstoodLanguages = ent.Comp.UnderstoodLanguages;
+        if (HasComp<RestoreLanguageCacheOnClone>(ent) && TryComp<LanguageCacheComponent>(ent, out var cache))
+        {  
+            RestoreCache((ent, cache));
+        }
+        else
+        {
+            comp.SpokenLanguages = ent.Comp.SpokenLanguages;
+            comp.UnderstoodLanguages = ent.Comp.UnderstoodLanguages;   
+        }
         if (TryComp<LanguageSpeakerComponent>(clone, out var speaker))
             UpdateEntityLanguages((clone,speaker));
     }
