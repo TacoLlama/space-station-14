@@ -9,6 +9,9 @@
     "states": [
         {
             "name": "cacti01"
-        }
+        },
+	{
+	    "name": "cacti02"
+	}
     ]
 }

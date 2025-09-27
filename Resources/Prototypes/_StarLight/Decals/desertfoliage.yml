@@ -1,3 +1,4 @@
+#Cacti
 - type: decal
   id: cacti01
   tags: ["Foliage"]
@@ -6,3 +7,12 @@
   sprite:
     sprite: _Starlight/Decals/Foliage/desert/cacti.rsi
     state: cacti01
+
+- type: decal
+  id: cacti02
+  tags: ["Foliage"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Starlight/Decals/Foliage/desert/cacti.rsi
+    state: cacti02
