@@ -1,6 +1,6 @@
 #Cacti Large
 - type: decal
-  id: Cacti Large 01
+  id: Cacti Large 1
   tags: ["Cacti"]
   snapCardinals: true
   defaultSnap: false
@@ -9,7 +9,7 @@
     state: cacti_large01
 
 - type: decal
-  id: cacti Large 02
+  id: Cacti Large 2
   tags: ["Cacti"]
   snapCardinals: true
   defaultSnap: false
@@ -18,7 +18,7 @@
     state: cacti_large02
 
 - type: decal
-  id: cacti Large 03
+  id: Cacti Large 3
   tags: ["Cacti"]
   snapCardinals: true
   defaultSnap: false
@@ -27,9 +27,17 @@
     state: cacti_large03
 
 #Cacti Small
+- type: decal
+  id: Cacti Small 1
+  tags: ["Cacti"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Starlight/Decals/Foliage/desert/cacti.rsi
+    state: cacti_small01
 
 - type: decal
-  id: cacti Small 02
+  id: Cacti Small 2
   tags: ["Cacti"]
   snapCardinals: true
   defaultSnap: false
