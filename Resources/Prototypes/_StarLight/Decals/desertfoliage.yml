@@ -1,9 +1,8 @@
 - type: decal
   id: cacti01
-  tags: ["Cactus", "Cacti", "Foliage", "desert"]
-  defaultCleanable: false
-  defaultCustomColor: false
-  defaultSnap: true
+  tags: ["Foliage"]
+  snapCardinals: true
+  defaultSnap: false
   sprite:
     sprite: _Starlight/Decals/Foliage/desert/cacti.rsi
     state: cacti01
