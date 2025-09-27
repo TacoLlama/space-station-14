@@ -1,17 +1,23 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "wayiscute",
+    "copyright": "Sprited by wayiscute",
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
         {
-            "name": "cacti01"
+            "name": "cacti_large01"
         },
 	{
-	    "name": "cacti02"
-	}
+	    "name": "cacti_large02"
+	},
+	{
+	    "name": "cacti_large03"
+	},
+	{
+	    "name": "cacti_small02"
+    }
     ]
 }
