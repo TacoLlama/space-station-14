@@ -73,8 +73,6 @@
   name: SubWoofer
   description: A smart dog, with an obsession for sick bass beats and stating laws.
   components:
-    - type: LanguageKnowledge
-      speaks:
     - type: ItemSlots
       slots:
         cell_slot:
