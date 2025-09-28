@@ -52,3 +52,14 @@
       - Thaveyan
       - Dog
 
+- type: entity
+  id: BaseSiliconBrainLanguages
+  abstract: true
+  components:
+  - type: LanguageKnowledge
+    speaks:
+    - GalacticCommon
+    - Machine
+    understands:
+    - GalacticCommon
+    - Machine
