@@ -26,6 +26,12 @@ public abstract partial class SharedLanguageSystem : EntitySystem
     /// </summary>
     public static LanguagePrototype Universal { get; private set; } = default!;
 
+    /// <summary>
+    ///     A cached set of all languages in the game
+    /// </summary>
+    [ViewVariables(VVAccess.ReadOnly)]
+    public HashSet<ProtoId<LanguagePrototype>> Languages = new();
+
     [Dependency] protected readonly IPrototypeManager _prototype = default!;
     [Dependency] protected readonly SharedGameTicker _ticker = default!;
 
@@ -33,6 +39,8 @@ public abstract partial class SharedLanguageSystem : EntitySystem
     {
         Universal = _prototype.Index(UniversalPrototype);
         SubscribeLocalEvent<LanguageKnowledgeComponent, CloningEvent>(OnClone);
+        SubscribeLocalEvent<LanguageKnowledgeComponent, MapInitEvent>(OnMapInit);
+        SubscribeLocalEvent<PrototypesReloadedEventArgs>(OnPrototypesReloaded);
     }
 
     private void OnClone(Entity<LanguageKnowledgeComponent> ent, ref CloningEvent ev)
@@ -52,6 +60,20 @@ public abstract partial class SharedLanguageSystem : EntitySystem
         }
         if (TryComp<LanguageSpeakerComponent>(clone, out var speaker))
             UpdateEntityLanguages((clone,speaker));
+    }
+
+    private void OnMapInit(Entity<LanguageKnowledgeComponent> ent, ref MapInitEvent ev)
+    {
+        var ev2 = new LanguageKnowledgeInitEvent(ent);
+        RaiseLocalEvent(ent, ref ev2 , broadcast: true);
+    }
+
+    private void OnPrototypesReloaded(ref PrototypesReloadedEventArgs ev)
+    {
+        if (!ev.WasModified<LanguagePrototype>())
+            return;
+
+        Languages = _prototype.EnumeratePrototypes<LanguagePrototype>().Select(x => new ProtoId<LanguagePrototype>(x.ID)).ToHashSet();
     }
 
     public LanguagePrototype? GetLanguagePrototype(ProtoId<LanguagePrototype> id)
