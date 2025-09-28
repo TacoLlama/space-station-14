@@ -125,6 +125,7 @@
           components:
           - FitsInDispenser
     - item: Syringe
+    - item: BorgDropper
     - item: BarSpoon
     - hand:
         emptyLabel: borg-slot-bottles-empty
