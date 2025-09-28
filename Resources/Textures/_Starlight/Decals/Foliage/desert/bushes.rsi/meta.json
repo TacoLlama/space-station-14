@@ -8,22 +8,13 @@
     },
     "states": [
     {
-        "name": "cacti_large01"
-    },
-	{
-	    "name": "cacti_large02"
-	},
-	{
-	    "name": "cacti_large03"
-	},
-    {
-        "name": "cacti_small01"
-    },
-	{
-	    "name": "cacti_small02"
+        "name": "bush01"
     },
     {
-        "name": "cacti_small03"
+        "name": "bush02"
+    },
+    {
+        "name": "bush03"
     }
     ]
 }
