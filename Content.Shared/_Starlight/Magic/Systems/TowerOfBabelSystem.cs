@@ -5,6 +5,7 @@ using Content.Shared._Starlight.Language.Events;
 using Content.Shared._Starlight.Language.Systems;
 using Content.Shared._Starlight.Magic.Components;
 using Content.Shared.Destructible;
+using Content.Shared.Popups;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
@@ -14,6 +15,7 @@ public sealed partial class TowerOfBabelSystem : EntitySystem
 {
     [Dependency] private readonly SharedLanguageSystem _language = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private readonly SharedPopupSystem _popup = default!;
 
     public override void Initialize()
     {
@@ -64,14 +66,21 @@ public sealed partial class TowerOfBabelSystem : EntitySystem
         foreach (var languageKnower in EntityManager.AllEntities<LanguageKnowledgeComponent>())
         {
             ShuffleLanguages(languageKnower, langs);
+            _popup.PopupEntity(Loc.GetString("tower-of-babel-shifted"), languageKnower, languageKnower);
         }
     }
 
     private void OnDestruction(Entity<TowerOfBabelComponent> ent, ref DestructionEventArgs ev)
     {
+        var towerEnumerator = EntityManager.EntityQueryEnumerator<TowerOfBabelComponent>();
+        towerEnumerator.MoveNext(out var _, out var _); //the tower being destroyed
+        if (towerEnumerator.MoveNext(out var _, out var _))
+            return; //there is a 2nd tower that is NOT detroyed. so dont reset languages yet.
+       
         foreach (var languageKnower in EntityManager.AllEntities<LanguageKnowledgeComponent>())
         {
             _language.RestoreCache((languageKnower, EnsureComp<LanguageCacheComponent>(languageKnower)));
+            _popup.PopupEntity(Loc.GetString("tower-of-babel-returned"), languageKnower, languageKnower);
             if (TryComp<LanguageSpeakerComponent>(languageKnower, out var speaker))
                 _language.UpdateEntityLanguages((languageKnower, speaker));
         }
