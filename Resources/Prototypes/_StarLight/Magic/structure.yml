@@ -1,6 +1,7 @@
 - type: entity
   id: TowerOfBabel
   parent: BaseStructure
+  name: tower of babel
   description: Me Grug. You?. <unintelligible>
   components:
     - type: Sprite
