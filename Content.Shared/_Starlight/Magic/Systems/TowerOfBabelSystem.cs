@@ -10,10 +10,9 @@ using Robust.Shared.Random;
 
 namespace Content.Shared._Starlight.Magic.Systems;
 
-public abstract partial class TowerOfBabelSystem : EntitySystem
+public sealed partial class TowerOfBabelSystem : EntitySystem
 {
     [Dependency] private readonly SharedLanguageSystem _language = default!;
-    [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
 
     public override void Initialize()
@@ -53,8 +52,8 @@ public abstract partial class TowerOfBabelSystem : EntitySystem
             comp.SpokenLanguages.Contains(SharedLanguageSystem.UniversalPrototype) ||
             comp.UnderstoodLanguages.Contains(SharedLanguageSystem.UniversalPrototype)
         )
-
             EnsureComp<UniversalLanguageSpeakerComponent>(languageKnower);
+
         if (TryComp<LanguageSpeakerComponent>(languageKnower, out var speaker))
             _language.UpdateEntityLanguages((languageKnower, speaker));
     }
@@ -80,7 +79,10 @@ public abstract partial class TowerOfBabelSystem : EntitySystem
 
     private void OnLanguageKnowledgeInit(ref LanguageKnowledgeInitEvent ev)
     {
+        if (!EntityManager.EntityQueryEnumerator<TowerOfBabelComponent>().MoveNext(out var _, out var _))
+            return; //if there is not atleast 1 tower of babel in existence do not shuttle languages.
         var ent = ev.Entity;
+
         ShuffleLanguages(ent);
     }
 }

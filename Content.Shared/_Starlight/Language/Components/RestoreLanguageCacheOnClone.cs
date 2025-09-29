@@ -4,4 +4,4 @@ namespace Content.Shared._Starlight.Language.Components;
 // Tells the cloning logic that it should pull languages from the LanguageCacheComponent
 // </summary>
 [RegisterComponent]
-public sealed partial class RestoreLanguageCacheOnClone : Component { }
+public sealed partial class RestoreLanguageCacheOnCloneComponent : Component { }

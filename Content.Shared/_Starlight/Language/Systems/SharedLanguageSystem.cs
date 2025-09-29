@@ -38,6 +38,8 @@ public abstract partial class SharedLanguageSystem : EntitySystem
     public override void Initialize()
     {
         Universal = _prototype.Index(UniversalPrototype);
+        Languages = _prototype.EnumeratePrototypes<LanguagePrototype>().Select(x => new ProtoId<LanguagePrototype>(x.ID)).ToHashSet();
+        
         SubscribeLocalEvent<LanguageKnowledgeComponent, CloningEvent>(OnClone);
         SubscribeLocalEvent<LanguageKnowledgeComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<PrototypesReloadedEventArgs>(OnPrototypesReloaded);
@@ -49,7 +51,7 @@ public abstract partial class SharedLanguageSystem : EntitySystem
             return;
         var clone = ev.CloneUid;
         var comp = EnsureComp<LanguageKnowledgeComponent>(ev.CloneUid);
-        if (HasComp<RestoreLanguageCacheOnClone>(ent) && TryComp<LanguageCacheComponent>(ent, out var cache))
+        if (HasComp<RestoreLanguageCacheOnCloneComponent>(ent) && TryComp<LanguageCacheComponent>(ent, out var cache))
         {  
             RestoreCache((ent, cache));
         }
@@ -68,7 +70,7 @@ public abstract partial class SharedLanguageSystem : EntitySystem
         RaiseLocalEvent(ent, ref ev2 , broadcast: true);
     }
 
-    private void OnPrototypesReloaded(ref PrototypesReloadedEventArgs ev)
+    private void OnPrototypesReloaded(PrototypesReloadedEventArgs ev)
     {
         if (!ev.WasModified<LanguagePrototype>())
             return;

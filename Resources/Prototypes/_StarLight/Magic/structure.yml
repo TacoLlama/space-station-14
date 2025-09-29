@@ -63,4 +63,5 @@
       overlay: false
       targetLayers: 
         - enum.TowerOfBabelLayers.Tower
+    - type: TowerOfBabel
     
