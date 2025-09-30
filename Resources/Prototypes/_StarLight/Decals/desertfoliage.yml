@@ -64,6 +64,15 @@
     sprite: _Starlight/Decals/Foliage/desert/rocks.rsi
     state: rock_large01
 
+- type: decal
+  id: Large Desert Rock 2
+  tags: ["Cacti", "arid"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Starlight/Decals/Foliage/desert/rocks.rsi
+    state: rock_large02
+
 
 #Rocks Small
 
@@ -95,4 +104,13 @@
   sprite:
     sprite: _Starlight/Decals/Foliage/desert/bushes.rsi
     state: bush03
+
+- type: decal
+  id: Desert Bush 4
+  tags: ["Cacti", "arid"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Starlight/Decals/Foliage/desert/bushes.rsi
+    state: bush04
 
