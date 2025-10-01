@@ -11,6 +11,9 @@
       layers: 
         - state: Tower_0
           map: ["enum.TowerOfBabelLayers.Tower"]
+    - type: Icon
+      sprite: _Starlight/Structures/tower_of_babel.rsi
+      state: Tower_0
     - type: Destructible
       thresholds:
       - trigger:
