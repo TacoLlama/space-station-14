@@ -91,7 +91,8 @@ public sealed partial class TowerOfBabelSystem : EntitySystem
        
         foreach (var languageKnower in EntityManager.AllEntities<LanguageKnowledgeComponent>())
         {
-            _language.RestoreCache((languageKnower, EnsureComp<LanguageCacheComponent>(languageKnower)));
+            if (TryComp<LanguageCacheComponent>(languageKnower, out var cache))
+                _language.RestoreCache((languageKnower, cache));
             _popup.PopupEntity(Loc.GetString("tower-of-babel-returned"), languageKnower, languageKnower);
             if (TryComp<LanguageSpeakerComponent>(languageKnower, out var speaker))
                 _language.UpdateEntityLanguages((languageKnower, speaker));
