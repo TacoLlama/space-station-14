@@ -1,6 +1,6 @@
 #Cacti Large
 - type: decal
-  id: Cacti Large 1
+  id: CactiLarge1
   tags: ["Cacti"]
   snapCardinals: true
   defaultSnap: false
@@ -9,7 +9,7 @@
     state: cacti_large01
 
 - type: decal
-  id: Cacti Large 2
+  id: CactiLarge2
   tags: ["Cacti"]
   snapCardinals: true
   defaultSnap: false
@@ -18,7 +18,7 @@
     state: cacti_large02
 
 - type: decal
-  id: Cacti Large 3
+  id: CactiLarge3
   tags: ["Cacti"]
   snapCardinals: true
   defaultSnap: false
@@ -28,7 +28,7 @@
 
 #Cacti Small
 - type: decal
-  id: Cacti Small 1
+  id: CactiSmall1
   tags: ["Cacti"]
   snapCardinals: true
   defaultSnap: false
@@ -37,7 +37,7 @@
     state: cacti_small01
 
 - type: decal
-  id: Cacti Small 2
+  id: CactiSmall2
   tags: ["Cacti"]
   snapCardinals: true
   defaultSnap: false
@@ -46,7 +46,7 @@
     state: cacti_small02
 
 - type: decal
-  id: Cacti Small 3
+  id: Cacti Small3
   tags: ["Cacti"]
   snapCardinals: true
   defaultSnap: false
@@ -60,7 +60,7 @@
 
 #Shrubs/Bushes
 - type: decal
-  id: Desert Bush 1
+  id: DesertBush1
   tags: ["Cacti", "arid"]
   snapCardinals: true
   defaultSnap: false
@@ -69,7 +69,7 @@
     state: bush01
 
 - type: decal
-  id: Desert Bush 2
+  id: DesertBush2
   tags: ["Cacti", "arid"]
   snapCardinals: true
   defaultSnap: false
@@ -78,7 +78,7 @@
     state: bush02
 
 - type: decal
-  id: Desert Bush 3
+  id: DesertBush3
   tags: ["Cacti", "arid"]
   snapCardinals: true
   defaultSnap: false
@@ -87,7 +87,7 @@
     state: bush03
 
 - type: decal
-  id: Desert Bush 4
+  id: DesertBush4
   tags: ["Cacti", "arid"]
   snapCardinals: true
   defaultSnap: false
