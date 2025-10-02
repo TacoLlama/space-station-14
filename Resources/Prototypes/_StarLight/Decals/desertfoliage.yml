@@ -55,17 +55,8 @@
     state: cacti_small03
 
 #Rocks Large
-- type: decal
-  id: Large Desert Rock 1
-  tags: ["Cacti", "arid"]
-  snapCardinals: true
-  defaultSnap: false
-  sprite:
-    sprite: _Starlight/Decals/Foliage/desert/rocks.rsi
-    state: rock_large01
 
 #Rocks Small
-
 
 #Shrubs/Bushes
 - type: decal
