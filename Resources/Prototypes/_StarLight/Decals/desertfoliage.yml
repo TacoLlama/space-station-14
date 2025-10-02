@@ -46,7 +46,7 @@
     state: cacti_small02
 
 - type: decal
-  id: Cacti Small3
+  id: CactiSmall3
   tags: ["Cacti"]
   snapCardinals: true
   defaultSnap: false
