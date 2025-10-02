@@ -64,6 +64,12 @@ public sealed class BorgSwitchableSubtypeSystem : SharedBorgSwitchableSubtypeSys
             _sprite.AddLayer((owner, chassisSprite), layerData, i);
         }
 
+        if (borgSubtype.SpriteToggleLightState is { } lightState)
+            _sprite.LayerSetRsiState((entity, chassisSprite), BorgVisualLayers.LightStatus, lightState);
+
+        if (borgSubtype.SpriteBodyState is { } bodyState)
+            _sprite.LayerSetRsiState((entity, chassisSprite), BorgVisualLayers.Body, bodyState);
+
         if (TryComp<BorgChassisComponent>(entity, out var chassis))
         {
             _borg.SetMindStates(

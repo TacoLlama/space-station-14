@@ -1,4 +1,5 @@
-using Content.Shared._Afterlight.Silicons.Borgs;
+using Content.Shared._Afterlight.Silicons.Borgs; // Afterlight
+using Content.Shared.Starlight; // Starlight-edit
 using Content.Shared.Actions;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Components;
@@ -21,6 +22,7 @@ public abstract class SharedBorgSwitchableTypeSystem : EntitySystem
     [Dependency] private readonly SharedUserInterfaceSystem _userInterface = default!;
     [Dependency] protected readonly IPrototypeManager Prototypes = default!;
     [Dependency] private readonly InteractionPopupSystem _interactionPopup = default!;
+    [Dependency] private readonly ISharedPlayersRoleManager _playerRoles = default!; // Starlight-edit
 
     public static readonly EntProtoId ActionId = "ActionSelectBorgType";
 
@@ -76,6 +78,18 @@ public abstract class SharedBorgSwitchableTypeSystem : EntitySystem
 
         if (!Prototypes.HasIndex(args.Prototype))
             return;
+
+        // Starlight-start: Handle subtype cost
+        if (TryComp<BorgSwitchableSubtypeComponent>(ent, out var subtypeComp) && subtypeComp.BorgSubtype != null
+            && Prototypes.Index(subtypeComp.BorgSubtype.Value).TryGetComponent<BorgSubtypeDefinitionComponent>(out var subtype) && subtype.Price is not null and > 0)
+        {
+            if (_playerRoles.GetPlayerData(ent.Owner) is not PlayerData playerData
+                || playerData.Balance < subtype.Price)
+                return;
+
+            playerData.Balance -= subtype.Price.Value;
+        }
+        // Starlight-end
 
         SelectBorgModule(ent, args.Prototype);
     }

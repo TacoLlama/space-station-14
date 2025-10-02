@@ -57,10 +57,7 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
         HelpGuidebookIds = GuidebookEntries;
 
         // Afterlight - borg subtypes
-        ChassisSpriteSelection.SubtypeSelected += () =>
-        {
-            ConfirmTypeButton.Disabled = false;
-        };
+        ChassisSpriteSelection.SubtypeSelected += () => ConfirmTypeButton.Disabled = false;
         // Afterlight end
     }
 
@@ -72,17 +69,17 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
         InfoPlaceholder.Visible = false;
         // ConfirmTypeButton.Disabled = false; Starlight
 
-        NameLabel.Text = PrototypeName(prototype);
-        DescriptionLabel.Text = Loc.GetString($"borg-type-{prototype.ID}-desc");
-        ChassisView.SetPrototype(prototype.DummyPrototype);
-
         // Afterlight - borg subtype
         if (_selectedBorgType != null)
         {
-            ConfirmTypeButton.Disabled = true;
             ChassisSpriteSelection.Update(_selectedBorgType);
+            ConfirmTypeButton.Disabled = ChassisSpriteSelection.SubtypePrototype == null;
         }
         // Afterlight end
+
+        NameLabel.Text = PrototypeName(prototype);
+        DescriptionLabel.Text = Loc.GetString($"borg-type-{prototype.ID}-desc");
+        ChassisView.SetPrototype(prototype.DummyPrototype);
     }
 
     private void ConfirmButtonPressed(BaseButton.ButtonEventArgs obj)
