@@ -501,7 +501,7 @@ namespace Content.Shared.Preferences
         }
 
         #region Starlight, walksanator fucking loses it and makes a throwing version of MemberwiseEquals
-        public bool AssertEquals(ICharacterProfile maybeOther)
+        public void AssertEquals(ICharacterProfile maybeOther)
         {
             if (maybeOther is not HumanoidCharacterProfile other) throw new DebugAssertException($"other is not HumanoidCharacterProfile it is {maybeOther.GetType()}");
             if (Name != other.Name) throw new DebugAssertException($"Name doesn't match expected '{Name}' got '{other.Name}'");
