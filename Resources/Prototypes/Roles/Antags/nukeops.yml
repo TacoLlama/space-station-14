@@ -95,10 +95,9 @@
   parent: SyndicateOperativeGearFull
   equipment:
     id: SyndiCommanderPDA
-    neck: SyndicateWhistle
+    neck: CommanderWhistle #Starlight, Whistle renamed
     ears: ClothingHeadsetAltSyndicateCommander #Starlight
     outerClothing: ClothingOuterHardsuitSyndieCommander
-    id: CommanderPDA
   inhand:
   - NukeOpsDeclarationOfWar
 
