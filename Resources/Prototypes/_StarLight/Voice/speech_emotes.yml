@@ -130,7 +130,7 @@
   name: chat-emote-name-trill
   category: Vocal
   available: false
-  icon: { sprite: _Starlight/Actions/felionoid.rsi, state: cat_print.png }
+  icon: { sprite: _Starlight/Actions/felionoid.rsi, state: cat_print }
   whitelist:
     components:
     - Vocal
