@@ -500,7 +500,7 @@ namespace Content.Shared.Preferences
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 
-        # Starlight, walksanator fucking loses it and makes a throwing version of MemberwiseEquals
+        #region Starlight, walksanator fucking loses it and makes a throwing version of MemberwiseEquals
         public bool AssertEquals(ICharacterProfile maybeOther)
         {
             if (maybeOther is not HumanoidCharacterProfile other) throw new DebugAssertException($"other is not HumanoidCharacterProfile it is {maybeOther.GetType()}");
