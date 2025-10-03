@@ -144,7 +144,7 @@ public sealed partial class PlayerProvidedCharacterRecords
     {
         return new PlayerProvidedCharacterRecords(
             hasWorkAuthorization: true,
-            height: 170, weight: 70,
+            height: 164, weight: 74,
             emergencyContactName: string.Empty,
             identifyingFeatures: string.Empty,
             allergies: "None",
