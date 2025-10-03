@@ -34,6 +34,18 @@
         {
             "name": "DamageOverlay_175",
             "directions": 1
+        },
+                {
+            "name": "DamageOverlay_200",
+            "directions": 1
+        },
+                {
+            "name": "DamageOverlay_300",
+            "directions": 1
+        },
+                {
+            "name": "DamageOverlay_400",
+            "directions": 1
         }
     ]
 }
