@@ -255,6 +255,17 @@
         {
             "name": "equipped-IDCARD",
             "directions": 4
+        },
+        {
+            "name": "pda-ntrep",
+            "delays": [
+                [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            ]
         }
     ]
 }
