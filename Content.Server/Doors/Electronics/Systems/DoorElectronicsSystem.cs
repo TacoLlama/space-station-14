@@ -29,17 +29,19 @@ public sealed class DoorElectronicsSystem : EntitySystem
     {
         var accesses = new List<ProtoId<AccessLevelPrototype>>();
 
-        if (TryComp<AccessReaderComponent>(uid, out var accessReader))
+        // Starlight edit Start
+        var protoMan = IoCManager.Resolve<IPrototypeManager>();
+        var allLevels = new HashSet<ProtoId<AccessLevelPrototype>>();
+        foreach (var group in component.AccessGroups)
         {
-            foreach (var accessList in accessReader.AccessLists)
-            {
-                var access = accessList.FirstOrDefault();
-                accesses.Add(access);
-            }
+            if (protoMan.TryIndex(group, out AccessGroupPrototype? groupProto))
+                allLevels.UnionWith(groupProto.Tags);
         }
+        accesses = allLevels.OrderBy(x => x).ToList();
 
-        var state = new DoorElectronicsConfigurationState(accesses);
+        var state = new DoorElectronicsConfigurationState(accesses, component.AccessGroups);
         _uiSystem.SetUiState(uid, DoorElectronicsConfigurationUiKey.Key, state);
+        // Starlight edit End
     }
 
     private void OnChangeConfiguration(

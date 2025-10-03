@@ -107,6 +107,10 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Glass/shuttle_syndicate.rsi
+    # Starlight Start
+    containers:
+      board: [ DoorElectronicsSyndicate ]
+    # Starlight End
 
 - type: entity
   parent: AirlockShuttle
@@ -117,6 +121,10 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/shuttle_syndicate.rsi
+    # Starlight Start
+    containers:
+      board: [ DoorElectronicsSyndicate ]
+    # Starlight End
 
 - type: entity
   parent: AirlockShuttle

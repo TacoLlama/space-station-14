@@ -95,29 +95,28 @@ namespace Content.Client.Access.UI
 
             var interfaceEnabled = state.IsPrivilegedIdPresent && state.IsPrivilegedIdAuthorized;
 
-            // Starlight-edit: Start
-            var allowedAccess = interfaceEnabled && state.AllowedModifyAccessList != null
-                ? state.AllowedModifyAccessList.ToList()
-                : new List<ProtoId<AccessLevelPrototype>>();
+            // Starlight edit Start
+            var availableAccess = state.AvailableAccessLevels?.ToList() ?? new List<ProtoId<AccessLevelPrototype>>();
+            var pressedAccess = state.PressedAccessLevels?.ToList() ?? new List<ProtoId<AccessLevelPrototype>>();
 
             var groupsWithCoverage = new List<ProtoId<AccessGroupPrototype>>();
-            if (allowedAccess.Count > 0 && state.AccessGroups != null)
+            if (availableAccess.Count > 0 && state.AccessGroups != null)
             {
                 foreach (var g in state.AccessGroups)
                 {
                     if (!protoManager.TryIndex(g, out AccessGroupPrototype? gp))
                         continue;
-                    
-                    var groupTags = gp.Tags.Where(tag => 
-                        protoManager.TryIndex<AccessLevelPrototype>(tag, out var accessProto) && 
-                        accessProto.CanAddToIdCard).ToList();
-                    
+
+                    var groupTags = gp.Tags.Where(tag =>
+                        protoManager.TryIndex<AccessLevelPrototype>(tag, out var accessProto) &&
+                        accessProto.CanAddToIdCard && availableAccess.Contains(tag)).ToList();
+
                     if (groupTags.Count == 0)
                         continue;
-                        
-                    var matchingTags = groupTags.Count(tag => allowedAccess.Contains(tag));
+
+                    var matchingTags = groupTags.Count;
                     var threshold = Math.Max(1, Math.Min(3, groupTags.Count / 2));
-                    
+
                     if (matchingTags >= threshold)
                         groupsWithCoverage.Add(gp.ID);
                 }
@@ -151,10 +150,10 @@ namespace Content.Client.Access.UI
                 showGroups ? state.CurrentAccessGroup : null;
 
             _accessButtons.UpdateState(
-                state.TargetAccessReaderIdAccessList?.ToList() ?? new List<ProtoId<AccessLevelPrototype>>(),
+                pressedAccess,
                 effectiveGroup,
                 protoManager,
-                allowedAccess);
+                availableAccess);
             AccessLevelControlContainer.AddChild(_accessButtons);
 
             foreach (var (id, button) in _accessButtons.ButtonsList)
