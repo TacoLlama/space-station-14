@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text.Json.Serialization;
+using Content.Shared.Humanoid.Prototypes;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._CD.Records;
@@ -145,6 +147,25 @@ public sealed partial class PlayerProvidedCharacterRecords
         return new PlayerProvidedCharacterRecords(
             hasWorkAuthorization: true,
             height: 164, weight: 74,
+            emergencyContactName: string.Empty,
+            identifyingFeatures: string.Empty,
+            allergies: "None",
+            drugAllergies: "None",
+            postmortemInstructions: "Return home",
+            medicalEntries: new List<RecordEntry>(),
+            securityEntries: new List<RecordEntry>(),
+            employmentEntries: new List<RecordEntry>(),
+            adminEntries: new List<RecordEntry>()
+        );
+    }
+
+    // Template with sensible defaults used when a profile has no saved character records.
+    public static PlayerProvidedCharacterRecords DefaultRecords(SpeciesPrototype species)
+    {
+        return new PlayerProvidedCharacterRecords(
+            hasWorkAuthorization: true,
+            height: (int)(species.StandardSize * (species.DefaultHeight - 1f) * 2f + species.StandardSize),
+            weight: (int)(species.StandardWeight + species.StandardDensity * (species.DefaultWidth * species.DefaultHeight * species.DefaultHeight - 1)),
             emergencyContactName: string.Empty,
             identifyingFeatures: string.Empty,
             allergies: "None",
