@@ -16836,5 +16836,34 @@ Entries:
   id: 168200
   time: '2025-10-03T03:48:21.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1682
+- author: CawsForConcern
+  changes:
+  - message: Updated label on one TTS voice
+    type: Tweak
+  id: 182600
+  time: '2025-10-04T03:58:13.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1826
+- author: walksanatora
+  changes:
+  - message: Added upstream content
+    type: Add
+  id: 181200
+  time: '2025-10-04T05:01:23.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1812
+- author: walksanatora
+  changes:
+  - message: Sans antag rolebans (we need more time to bake those)
+    type: Remove
+  id: 181201
+  time: '2025-10-04T05:01:23.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1812
+- author: walsanator
+  changes:
+  - message: Fixed station-AI able to RR other AIs by shunting into the same chassis
+      as them
+    type: Fix
+  id: 182900
+  time: '2025-10-04T06:33:28.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1829
 Order: -1
 
