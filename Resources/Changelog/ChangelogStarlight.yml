@@ -16945,5 +16945,13 @@ Entries:
   id: 184202
   time: '2025-10-04T19:43:46.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1842
+- author: walksanatora
+  changes:
+  - message: Pulled in the intellicards in AI electronics crate, and intellicards
+      now show what is in them.
+    type: Tweak
+  id: 183000
+  time: '2025-10-04T21:15:59.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1830
 Order: -1
 
