@@ -16953,5 +16953,26 @@ Entries:
   id: 183000
   time: '2025-10-04T21:15:59.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1830
+- author: FoxxoTrystan
+  changes:
+  - message: Changed AI Core Sprites.
+    type: Tweak
+  id: 169900
+  time: '2025-10-04T21:13:54.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1699
+- author: FoxxoTrystan
+  changes:
+  - message: Intellicard Icon Sprites.
+    type: Add
+  id: 169901
+  time: '2025-10-04T21:13:54.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1699
+- author: FoxxoTrystan
+  changes:
+  - message: AI Eye can zoom in/out now.
+    type: Fix
+  id: 169902
+  time: '2025-10-04T21:13:54.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1699
 Order: -1
 
