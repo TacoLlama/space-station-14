@@ -34,7 +34,6 @@ public sealed partial class TestPair
 
         var profile = (HumanoidCharacterProfile)prefs.Characters[0];
         var newProfile = profile.WithAntagPreference(id, value);
-        _modifiedProfiles.Add(userId);
         await Server.WaitPost(() => prefMan.SetProfile(userId, 0, newProfile).Wait());
     }
 
@@ -50,7 +49,7 @@ public sealed partial class TestPair
 
     /// <inheritdoc cref="SetJobPriority"/>
     public async Task SetJobPriorities(params (ProtoId<JobPrototype>, JobPriority)[] priorities)
-        => await SetJobPriorities(Client.User!.Value, priorities);
+        => await SetJobPriorities(Player!, priorities);
 
     /// <inheritdoc cref="SetJobPriority"/>
     public async Task SetJobPriorities(NetUserId user, params (ProtoId<JobPrototype>, JobPriority)[] priorities)
@@ -83,9 +82,9 @@ public sealed partial class TestPair
                 dictionary[job] = priority;
         }
 
-        prefs.JobPriorities = dictionary; //Starlight, priorities are on the prefs
+        //Starlight. Priority is on the prefman.
+        await Server.WaitPost(() => prefMan.SetJobPriorities(user, dictionary).Wait());
         //var newProfile = profile.WithJobPriorities(dictionary);
-        _modifiedProfiles.Add(user);
         await Server.WaitPost(() => prefMan.SetProfile(user, 0, profile).Wait());
     }
 
