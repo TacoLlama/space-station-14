@@ -16865,5 +16865,12 @@ Entries:
   id: 182900
   time: '2025-10-04T06:33:28.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1829
+- author: CrazyPhantom
+  changes:
+  - message: Changed 'Cryogenics' access name to 'Cryosleep'.
+    type: Tweak
+  id: 184100
+  time: '2025-10-04T16:41:33.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1841
 Order: -1
 
