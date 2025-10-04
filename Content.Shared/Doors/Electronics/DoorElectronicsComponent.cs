@@ -32,12 +32,17 @@ public sealed class DoorElectronicsUpdateConfigurationMessage : BoundUserInterfa
 public sealed class DoorElectronicsConfigurationState : BoundUserInterfaceState
 {
     public List<ProtoId<AccessLevelPrototype>> AccessList;
-    public List<ProtoId<AccessGroupPrototype>> AccessGroups; // Starlight
-
-    public DoorElectronicsConfigurationState(List<ProtoId<AccessLevelPrototype>> accessList, List<ProtoId<AccessGroupPrototype>> accessGroups) // Starlight edit
+    // Starlight Start
+    public List<ProtoId<AccessGroupPrototype>> AccessGroups;
+    public List<ProtoId<AccessLevelPrototype>> PressedAccessList;
+    // Starlight End
+    public DoorElectronicsConfigurationState(List<ProtoId<AccessLevelPrototype>> accessList, List<ProtoId<AccessGroupPrototype>> accessGroups, List<ProtoId<AccessLevelPrototype>> pressedAccessList) // Starlight edit
     {
         AccessList = accessList;
-        AccessGroups = accessGroups; // Starlight
+        // Starlight Start
+        AccessGroups = accessGroups;
+        PressedAccessList = pressedAccessList;
+        // Starlight End
     }
 }
 

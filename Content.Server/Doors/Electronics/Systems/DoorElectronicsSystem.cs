@@ -27,7 +27,7 @@ public sealed class DoorElectronicsSystem : EntitySystem
 
     public void UpdateUserInterface(EntityUid uid, DoorElectronicsComponent component)
     {
-        var accesses = new List<ProtoId<AccessLevelPrototype>>();
+        // var accesses = new List<ProtoId<AccessLevelPrototype>>(); // Starlight edit
 
         // Starlight edit Start
         var protoMan = IoCManager.Resolve<IPrototypeManager>();
@@ -37,9 +37,15 @@ public sealed class DoorElectronicsSystem : EntitySystem
             if (protoMan.TryIndex(group, out AccessGroupPrototype? groupProto))
                 allLevels.UnionWith(groupProto.Tags);
         }
-        accesses = allLevels.OrderBy(x => x).ToList();
+        var possibleAccesses = allLevels.OrderBy(x => x).ToList();
 
-        var state = new DoorElectronicsConfigurationState(accesses, component.AccessGroups);
+        var pressedAccesses = new List<ProtoId<AccessLevelPrototype>>();
+        if (TryComp<AccessReaderComponent>(uid, out var accessReader))
+        {
+            foreach (var accessList in accessReader.AccessLists)
+                pressedAccesses.AddRange(accessList);
+        }
+        var state = new DoorElectronicsConfigurationState(possibleAccesses, component.AccessGroups, pressedAccesses);
         _uiSystem.SetUiState(uid, DoorElectronicsConfigurationUiKey.Key, state);
         // Starlight edit End
     }

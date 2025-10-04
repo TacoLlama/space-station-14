@@ -51,12 +51,15 @@ public sealed partial class DoorElectronicsConfigurationMenu : DefaultWindow
         _accessButtons.Populate(accessLevels, protoManager);
     }
 
-    public void UpdateState(List<ProtoId<AccessLevelPrototype>> accessList, List<ProtoId<AccessGroupPrototype>> accessGroups)
+    public void UpdateState(List<ProtoId<AccessLevelPrototype>> possibleAccessList, List<ProtoId<AccessGroupPrototype>> accessGroups, List<ProtoId<AccessLevelPrototype>>? pressedAccessList = null)
     {
         _groups = accessGroups;
-        _allLevels = accessList.Distinct().ToList();
-        if (_selectedGroup == null && _groups.Count > 0)
-            _selectedGroup = _groups[0];
+        _allLevels = possibleAccessList.Distinct().ToList();
+        if (_selectedGroup == null || !_groups.Contains(_selectedGroup.Value))
+        {
+            if (_groups.Count > 0)
+                _selectedGroup = _groups[0];
+        }
 
         _accessGroups.Populate(_groups, _selectedGroup ?? (_groups.Count > 0 ? _groups[0] : default), IoCManager.Resolve<IPrototypeManager>());
 
@@ -80,7 +83,7 @@ public sealed partial class DoorElectronicsConfigurationMenu : DefaultWindow
             };
         }
 
-        _pressedLevels = _allLevels.ToHashSet();
+        _pressedLevels = (pressedAccessList ?? new List<ProtoId<AccessLevelPrototype>>()).ToHashSet();
         UpdateAccessButtons();
     }
 
@@ -104,9 +107,7 @@ public sealed partial class DoorElectronicsConfigurationMenu : DefaultWindow
                     _pressedLevels.Add(id);
                 else
                     _pressedLevels.Remove(id);
-                if (_selectedGroup != null && _accessGroups.ButtonsList.TryGetValue(_selectedGroup.Value, out var groupButton) && !groupButton.Pressed)
-                    groupButton.Pressed = true;
-                OnAccessChanged?.Invoke(_accessButtons.ButtonsList.Where(x => x.Value.Pressed).Select(x => new ProtoId<AccessLevelPrototype>(x.Key)).ToList());
+                OnAccessChanged?.Invoke(_pressedLevels.Where(level => levels.Contains(level)).ToList());
             };
         }
     // Starlight edit End

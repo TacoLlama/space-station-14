@@ -48,8 +48,7 @@ public sealed class DoorElectronicsBoundUserInterface : BoundUserInterface
         if (state is not DoorElectronicsConfigurationState cast)
             return;
         // Starlight End
-
-        _window?.UpdateState(cast.AccessList, cast.AccessGroups); // Starlight edit
+        _window?.UpdateState(cast.AccessList, cast.AccessGroups, cast.PressedAccessList); // Starlight edit
     }
 
     public void UpdateConfiguration(List<ProtoId<AccessLevelPrototype>> newAccessList)

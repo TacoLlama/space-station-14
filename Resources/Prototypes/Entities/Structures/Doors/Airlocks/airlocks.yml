@@ -134,7 +134,7 @@
     layoutId: AirlockSyndicate
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsSyndicate ]
+      board: [ BaseDoorElectronicsSyndicate ]
   # Starlight End
 
 - type: entity
@@ -161,7 +161,7 @@
     layoutId: AirlockCentralCommand
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsCentralCommand ]
+      board: [ BaseDoorElectronicsCentComm ]
   # Starlight End
 
 - type: entity
@@ -183,6 +183,11 @@
     sprite: Structures/Doors/Airlocks/Standard/xenoborg.rsi
   - type: Paintable
     group: null
+  # Starlight Start
+  - type: ContainerFill
+    containers:
+      board: [ BaseDoorElectronicsXenoborg ]
+  # Starlight End
 
 - type: entity
   parent: Airlock
@@ -321,7 +326,7 @@
     layoutId: AirlockSyndicate
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsSyndicate ]
+      board: [ BaseDoorElectronicsSyndicate ]
   # Starlight End
 
 - type: entity
@@ -346,7 +351,7 @@
     layoutId: AirlockCentralCommand
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsCentralCommand ]
+      board: [ BaseDoorElectronicsCentComm ]
   # Starlight End
 
 - type: entity
