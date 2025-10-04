@@ -10,8 +10,8 @@
       board:
       - WeaponEnergyTurretSiliconControlPanelElectronics
   - type: DeviceNetwork
-    receiveFrequencyId: TurretAI
-    transmitFrequencyId: TurretControlAI
+    receiveFrequencyId: TurretControlSilicon
+    transmitFrequencyId: TurretSilicon
   - type: TurretTargetSettings
     exemptAccessLevels:
     - BasicSilicon
