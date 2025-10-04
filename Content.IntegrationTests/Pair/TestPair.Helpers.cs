@@ -49,7 +49,7 @@ public sealed partial class TestPair
 
     /// <inheritdoc cref="SetJobPriority"/>
     public async Task SetJobPriorities(params (ProtoId<JobPrototype>, JobPriority)[] priorities)
-        => await SetJobPriorities(Player!, priorities);
+        => await SetJobPriorities(Client.User!.Value, priorities);
 
     /// <inheritdoc cref="SetJobPriority"/>
     public async Task SetJobPriorities(NetUserId user, params (ProtoId<JobPrototype>, JobPriority)[] priorities)
