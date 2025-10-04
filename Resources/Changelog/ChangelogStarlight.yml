@@ -16924,5 +16924,26 @@ Entries:
   id: 182706
   time: '2025-10-04T19:38:55.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1827
+- author: CorruptOmega
+  changes:
+  - message: Cat ears in the Hug Dispenser are now the non-contraband white cat ears.
+    type: Tweak
+  id: 184200
+  time: '2025-10-04T19:43:46.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1842
+- author: CorruptOmega
+  changes:
+  - message: White cat ears can now be found in some loot tables and presents.
+    type: Add
+  id: 184201
+  time: '2025-10-04T19:43:46.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1842
+- author: CorruptOmega
+  changes:
+  - message: Janitor Cat Maid now uses white cat ears instead of contraband version.
+    type: Tweak
+  id: 184202
+  time: '2025-10-04T19:43:46.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1842
 Order: -1
 
