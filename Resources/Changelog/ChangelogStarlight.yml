@@ -16706,5 +16706,156 @@ Entries:
   id: 177907
   time: '2025-10-01T03:53:05.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1779
+- author: CrazyPhantom
+  changes:
+  - message: Cyborgs displaying laws like a lawboard
+    type: Fix
+  id: 178400
+  time: '2025-10-01T09:47:13.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1784
+- author: CawsForConcern
+  changes:
+  - message: (Cluster) Random roundstart artifacts to Science Xenoarcheology Lab
+    type: Add
+  id: 178000
+  time: '2025-10-01T15:15:15.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1780
+- author: CawsForConcern
+  changes:
+  - message: (Cluster) Moved medbays defib to the east wall so it's easier to access
+    type: Tweak
+  id: 178001
+  time: '2025-10-01T15:15:15.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1780
+- author: CawsForConcern
+  changes:
+  - message: (Cluster) New surgery door for surgical theatre
+    type: Tweak
+  id: 178002
+  time: '2025-10-01T15:15:15.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1780
+- author: CawsForConcern
+  changes:
+  - message: (Cluster) Cryo shouldn't cool the entirety of distro anymore
+    type: Fix
+  id: 178003
+  time: '2025-10-01T15:15:15.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1780
+- author: CawsForConcern
+  changes:
+  - message: (Cluster) Missing Departmental request computers added
+    type: Fix
+  id: 178004
+  time: '2025-10-01T15:15:15.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1780
+- author: CawsForConcern
+  changes:
+  - message: (Cluster) Arrivals screens were placed at Evac instead of regular screens
+    type: Fix
+  id: 178005
+  time: '2025-10-01T15:15:15.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1780
+- author: CawsForConcern
+  changes:
+  - message: (Cluster) Missing LV wires to the North Atmospherics APC
+    type: Fix
+  id: 178006
+  time: '2025-10-01T15:15:15.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1780
+- author: Conflee
+  changes:
+  - message: Added Box back to the map pool. This is a Starlightified version of the
+      most recent Wizden version, which means all the new updates with Genpop etc
+      are in. Expanded maints in several areas as well, to mix it up.
+    type: Add
+  id: 178800
+  time: '2025-10-01T15:25:59.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1788
+- author: Vonte
+  changes:
+  - message: SP91-RC now has its own wielded inhand instead of the c20 one
+    type: Tweak
+  id: 176600
+  time: '2025-10-01T15:26:29.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1766
+- author: 'Fractalflower:'
+  changes:
+  - message: Scarves are now available in loadouts!
+    type: Add
+  id: 176300
+  time: '2025-10-01T15:30:49.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1763
+- author: Vonte
+  changes:
+  - message: Added the ability to choose hat your preferred hat in the Blueshield
+      Officer loadout
+    type: Add
+  id: 179000
+  time: '2025-10-01T18:30:18.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1790
+- author: Vonte
+  changes:
+  - message: Added a new Blueshield bounty hunter's hat
+    type: Add
+  id: 179001
+  time: '2025-10-01T18:30:18.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1790
+- author: Vonte
+  changes:
+  - message: Added the Blueshield Poncho to the Blue shield officer loadout
+    type: Add
+  id: 179002
+  time: '2025-10-01T18:30:18.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1790
+- author: CawsForConcern
+  changes:
+  - message: Criminal card fax was stamped with a 'CentCom' stamp when it should've
+      been a 'CentComm' stamp
+    type: Fix
+  id: 179400
+  time: '2025-10-02T01:06:40.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1794
+- author: CrazyPhantom
+  changes:
+  - message: Build Error caused by Shadekins not needing to breathe.
+    type: Fix
+  id: 179600
+  time: '2025-10-02T05:41:58.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1796
+- author: CrazyPhantom
+  changes:
+  - message: Fixes ID card consoles not being able to change access
+    type: Fix
+  id: 180900
+  time: '2025-10-03T02:17:27.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1809
+- author: CommanderAlex365
+  changes:
+  - message: Thaven emotes now have sounds (screaming, laughing, etc.)
+    type: Fix
+  id: 168200
+  time: '2025-10-03T03:48:21.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1682
+- author: CawsForConcern
+  changes:
+  - message: Updated label on one TTS voice
+    type: Tweak
+  id: 182600
+  time: '2025-10-04T03:58:13.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1826
+- author: walksanatora
+  changes:
+  - message: Added upstream content
+    type: Add
+  id: 181200
+  time: '2025-10-04T05:01:23.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1812
+- author: walksanatora
+  changes:
+  - message: Sans antag rolebans (we need more time to bake those)
+    type: Remove
+  id: 181201
+  time: '2025-10-04T05:01:23.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1812
 Order: -1
 
