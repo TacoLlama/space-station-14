@@ -13,7 +13,7 @@ public abstract partial class SharedStationAiSystem
     private ProtoId<StationAiCustomizationGroupPrototype> _stationAiCoreCustomGroupProtoId = "StationAiCoreIconography";
     private ProtoId<StationAiCustomizationGroupPrototype> _stationAiHologramCustomGroupProtoId = "StationAiHolograms";
 
-    private readonly SpriteSpecifier.Rsi _stationAiRebooting = new(new ResPath("Mobs/Silicon/station_ai.rsi"), "ai_fuzz");
+    private readonly SpriteSpecifier.Rsi _stationAiRebooting = new(new ResPath("_Starlight/Mobs/Silicon/station_ai.rsi"), "ai_fuzz");
 
     private void InitializeCustomization()
     {
