@@ -16843,5 +16843,19 @@ Entries:
   id: 182600
   time: '2025-10-04T03:58:13.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1826
+- author: walksanatora
+  changes:
+  - message: Added upstream content
+    type: Add
+  id: 181200
+  time: '2025-10-04T05:01:23.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1812
+- author: walksanatora
+  changes:
+  - message: Sans antag rolebans (we need more time to bake those)
+    type: Remove
+  id: 181201
+  time: '2025-10-04T05:01:23.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1812
 Order: -1
 
