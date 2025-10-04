@@ -16982,5 +16982,12 @@ Entries:
   id: 185300
   time: '2025-10-04T22:29:34.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1853
+- author: walksantora
+  changes:
+  - message: Merged upstream PR that fixed misgenering on pins.
+    type: Add
+  id: 185500
+  time: '2025-10-04T22:34:18.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1855
 Order: -1
 
