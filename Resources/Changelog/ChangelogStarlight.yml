@@ -16857,5 +16857,13 @@ Entries:
   id: 181201
   time: '2025-10-04T05:01:23.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1812
+- author: walsanator
+  changes:
+  - message: Fixed station-AI able to RR other AIs by shunting into the same chassis
+      as them
+    type: Fix
+  id: 182900
+  time: '2025-10-04T06:33:28.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1829
 Order: -1
 
