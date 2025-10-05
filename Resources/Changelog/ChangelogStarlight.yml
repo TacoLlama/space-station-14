@@ -16989,5 +16989,12 @@ Entries:
   id: 185500
   time: '2025-10-04T22:34:18.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1855
+- author: mikeysaurus
+  changes:
+  - message: fix typo on concrete wall's visible name
+    type: Fix
+  id: 186400
+  time: '2025-10-05T20:45:43.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1864
 Order: -1
 
