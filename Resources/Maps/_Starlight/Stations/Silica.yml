@@ -4,8 +4,8 @@ meta:
   engineVersion: 266.0.0
   forkId: ""
   forkVersion: ""
-  time: 09/30/2025 00:26:08
-  entityCount: 25258
+  time: 10/05/2025 18:09:33
+  entityCount: 25255
 maps:
 - 1
 grids:
@@ -665,6 +665,7 @@ entities:
             5832: -34,33
             5835: -35,23
             5836: -37,23
+            5842: -22,28
         - node:
             zIndex: 1
             color: '#FFFFFFFF'
@@ -735,6 +736,11 @@ entities:
             id: BotGreyscale
           decals:
             5091: 38,67
+            5845: -13,32
+            5846: -12,32
+            5847: -12,33
+            5848: -13,33
+            5849: -13,28
         - node:
             zIndex: 2
             color: '#FFFFFFFF'
@@ -763,6 +769,7 @@ entities:
             5016: 31,-79
             5773: 19,60
             5774: 19,59
+            5844: -21,28
         - node:
             zIndex: 1
             color: '#FFFFFFFF'
@@ -786,6 +793,12 @@ entities:
           decals:
             5660: -41,29
             5706: -42,29
+        - node:
+            color: '#FFFFFFFF'
+            id: BotRight
+          decals:
+            5837: -15,36
+            5843: -23,28
         - node:
             zIndex: 1
             color: '#FFFFFFFF'
@@ -3546,8 +3559,6 @@ entities:
           decals:
             5497: -12,35
             5498: -12,34
-            5499: -12,33
-            5500: -12,32
         - node:
             color: '#BC863FCC'
             id: BrickTileWhiteLineE
@@ -8521,7 +8532,8 @@ entities:
             0: 13079
             1: 32768
           11,-5:
-            0: 65248
+            0: 62176
+            7: 3072
           8,-8:
             1: 7
           7,-8:
@@ -9180,6 +9192,11 @@ entities:
           temperature: 293.15
           moles:
             Plasma: 6666.982
+        - volume: 2500
+          temperature: 293.14987
+          moles:
+            Oxygen: 21.824879
+            Nitrogen: 82.10312
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
@@ -11581,8 +11598,8 @@ entities:
       parent: 2
     - type: DeviceList
       devices:
-      - 16193
       - 16011
+      - 16193
       - 12810
     - type: Fixtures
       fixtures: {}
@@ -12617,7 +12634,7 @@ entities:
       pos: -29.5,-12.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -79958.75
+      secondsUntilStateChange: -80793.39
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12629,7 +12646,7 @@ entities:
       pos: 30.5,-28.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -79965.25
+      secondsUntilStateChange: -80799.89
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12641,7 +12658,7 @@ entities:
       pos: 30.5,-24.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -79965.945
+      secondsUntilStateChange: -80800.586
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -13792,7 +13809,7 @@ entities:
       pos: 36.5,0.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -171662.06
+      secondsUntilStateChange: -172496.7
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15183,8 +15200,8 @@ entities:
       parent: 2
     - type: DeviceNetwork
       deviceLists:
-      - 12692
       - 142
+      - 11532
   - uid: 627
     components:
     - type: Transform
@@ -26911,13 +26928,6 @@ entities:
     - type: Transform
       pos: 19.878284,-43.246147
       parent: 2
-- proto: BookHowToKeepStationClean
-  entities:
-  - uid: 2817
-    components:
-    - type: Transform
-      pos: 34.559814,-10.288103
-      parent: 2
 - proto: BookIanAntarctica
   entities:
   - uid: 2818
@@ -27732,22 +27742,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 11.5,12.5
       parent: 2
-  - uid: 2948
-    components:
-    - type: MetaData
-      name: button frame (lights)
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 39,-14.5
-      parent: 2
-  - uid: 2949
-    components:
-    - type: MetaData
-      name: button frame (lights)
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 34,-14.5
-      parent: 2
   - uid: 2950
     components:
     - type: MetaData
@@ -27762,6 +27756,22 @@ entities:
       name: button frame (lights)
     - type: Transform
       pos: 51.5,-11.5
+      parent: 2
+  - uid: 20532
+    components:
+    - type: MetaData
+      name: button frame (lights)
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 40.5,-12.5
+      parent: 2
+  - uid: 20533
+    components:
+    - type: MetaData
+      name: button frame (lights)
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 35.5,-12.5
       parent: 2
 - proto: CableApcExtension
   entities:
@@ -54349,21 +54359,6 @@ entities:
     - type: Transform
       pos: -21.5,29.5
       parent: 2
-  - uid: 8267
-    components:
-    - type: Transform
-      pos: -17.5,32.5
-      parent: 2
-  - uid: 8268
-    components:
-    - type: Transform
-      pos: -17.5,31.5
-      parent: 2
-  - uid: 8269
-    components:
-    - type: Transform
-      pos: -17.5,30.5
-      parent: 2
   - uid: 8270
     components:
     - type: Transform
@@ -67704,6 +67699,13 @@ entities:
     - type: Transform
       pos: 1.8583351,-21.279425
       parent: 2
+- proto: ClothingNeckCloakBi
+  entities:
+  - uid: 11529
+    components:
+    - type: Transform
+      pos: -0.46078348,16.701557
+      parent: 2
 - proto: ClothingNeckCloakMoth
   entities:
   - uid: 10680
@@ -71017,6 +71019,12 @@ entities:
       parent: 2
 - proto: DisposalBend
   entities:
+  - uid: 8268
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -17.5,26.5
+      parent: 2
   - uid: 11212
     components:
     - type: Transform
@@ -71537,6 +71545,11 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -35.5,28.5
       parent: 2
+  - uid: 11530
+    components:
+    - type: Transform
+      pos: -18.5,28.5
+      parent: 2
 - proto: DisposalJunction
   entities:
   - uid: 11303
@@ -71766,6 +71779,11 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -32.5,12.5
+      parent: 2
+  - uid: 11564
+    components:
+    - type: Transform
+      pos: -18.5,26.5
       parent: 2
 - proto: DisposalPipe
   entities:
@@ -72846,30 +72864,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -24.5,28.5
       parent: 2
-  - uid: 11529
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -17.5,28.5
-      parent: 2
-  - uid: 11530
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -16.5,28.5
-      parent: 2
-  - uid: 11531
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -15.5,28.5
-      parent: 2
-  - uid: 11532
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -14.5,28.5
-      parent: 2
   - uid: 11533
     components:
     - type: Transform
@@ -73038,11 +73032,6 @@ entities:
     components:
     - type: Transform
       pos: -18.5,27.5
-      parent: 2
-  - uid: 11564
-    components:
-    - type: Transform
-      pos: -18.5,26.5
       parent: 2
   - uid: 11565
     components:
@@ -75220,6 +75209,11 @@ entities:
       parent: 2
 - proto: DisposalTaggerDisposals
   entities:
+  - uid: 8269
+    components:
+    - type: Transform
+      pos: -17.5,27.5
+      parent: 2
   - uid: 11938
     components:
     - type: Transform
@@ -75272,12 +75266,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 47.5,55.5
-      parent: 2
-  - uid: 11947
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -13.5,28.5
       parent: 2
   - uid: 11948
     components:
@@ -75526,6 +75514,11 @@ entities:
       parent: 2
 - proto: DisposalTrunk
   entities:
+  - uid: 11947
+    components:
+    - type: Transform
+      pos: -17.5,28.5
+      parent: 2
   - uid: 11990
     components:
     - type: Transform
@@ -75602,12 +75595,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 37.5,20.5
-      parent: 2
-  - uid: 12003
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -12.5,28.5
       parent: 2
   - uid: 12004
     components:
@@ -76044,11 +76031,6 @@ entities:
     - type: Transform
       pos: 4.5,-5.5
       parent: 2
-  - uid: 12084
-    components:
-    - type: Transform
-      pos: -12.5,32.5
-      parent: 2
   - uid: 12085
     components:
     - type: Transform
@@ -76144,6 +76126,11 @@ entities:
     - type: Transform
       pos: -54.5,29.5
       parent: 2
+  - uid: 12692
+    components:
+    - type: Transform
+      pos: -17.5,28.5
+      parent: 2
 - proto: DisposalXJunction
   entities:
   - uid: 12104
@@ -76176,11 +76163,6 @@ entities:
     components:
     - type: Transform
       pos: 10.5,28.5
-      parent: 2
-  - uid: 12109
-    components:
-    - type: Transform
-      pos: -18.5,28.5
       parent: 2
   - uid: 12110
     components:
@@ -76254,6 +76236,16 @@ entities:
       parent: 2
 - proto: Dresser
   entities:
+  - uid: 12084
+    components:
+    - type: Transform
+      pos: 39.5,-13.5
+      parent: 2
+  - uid: 12109
+    components:
+    - type: Transform
+      pos: 34.5,-10.5
+      parent: 2
   - uid: 12122
     components:
     - type: Transform
@@ -78957,6 +78949,22 @@ entities:
       parent: 2
 - proto: FireAlarm
   entities:
+  - uid: 11532
+    components:
+    - type: MetaData
+      name: fire alarm (Dorms)
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 40.5,-11.5
+      parent: 2
+    - type: DeviceList
+      devices:
+      - 12805
+      - 13066
+      - 13067
+      - 626
+    - type: Fixtures
+      fixtures: {}
   - uid: 12573
     components:
     - type: MetaData
@@ -81004,22 +81012,6 @@ entities:
       - 13026
     - type: Fixtures
       fixtures: {}
-  - uid: 12692
-    components:
-    - type: MetaData
-      name: fire alarm (Dorms)
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 40.5,-12.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 12805
-      - 13066
-      - 13067
-      - 626
-    - type: Fixtures
-      fixtures: {}
   - uid: 12693
     components:
     - type: MetaData
@@ -82062,7 +82054,7 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 142
-      - 12692
+      - 11532
   - uid: 12806
     components:
     - type: Transform
@@ -84695,7 +84687,7 @@ entities:
       - 143
       - 12693
       - 142
-      - 12692
+      - 11532
   - uid: 13067
     components:
     - type: Transform
@@ -84706,7 +84698,7 @@ entities:
       - 143
       - 12693
       - 142
-      - 12692
+      - 11532
   - uid: 13068
     components:
     - type: Transform
@@ -84867,6 +84859,13 @@ entities:
     - type: InsideEntityStorage
 - proto: FloorDrain
   entities:
+  - uid: 11531
+    components:
+    - type: Transform
+      pos: -24.5,8.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
   - uid: 13073
     components:
     - type: Transform
@@ -108050,6 +108049,7 @@ entities:
   - uid: 16011
     components:
     - type: Transform
+      rot: -3.141592653589793 rad
       pos: 47.5,-17.5
       parent: 2
     - type: DeviceNetwork
@@ -110114,6 +110114,7 @@ entities:
   - uid: 16193
     components:
     - type: Transform
+      rot: -3.141592653589793 rad
       pos: 46.5,-17.5
       parent: 2
     - type: DeviceNetwork
@@ -119220,6 +119221,11 @@ entities:
     - type: Transform
       pos: 47.5,-18.5
       parent: 2
+  - uid: 18376
+    components:
+    - type: Transform
+      pos: 20.5,12.5
+      parent: 2
 - proto: Lamp
   entities:
   - uid: 17946
@@ -121108,7 +121114,7 @@ entities:
   - uid: 18125
     components:
     - type: Transform
-      pos: 39.39924,-13.499291
+      pos: 39.5115,-13.132179
       parent: 2
 - proto: MachineAnomalyGenerator
   entities:
@@ -121231,6 +121237,11 @@ entities:
       parent: 2
 - proto: MachineMaterialSilo
   entities:
+  - uid: 2948
+    components:
+    - type: Transform
+      pos: -12.5,32.5
+      parent: 2
   - uid: 18144
     components:
     - type: Transform
@@ -123404,16 +123415,6 @@ entities:
     components:
     - type: Transform
       pos: 18.365461,15.462658
-      parent: 2
-  - uid: 18376
-    components:
-    - type: Transform
-      pos: 39.681816,-13.2762985
-      parent: 2
-  - uid: 18377
-    components:
-    - type: Transform
-      pos: 39.503345,-13.365496
       parent: 2
 - proto: PaperBin
   entities:
@@ -131133,6 +131134,16 @@ entities:
       parent: 2
 - proto: RandomPosterLegit
   entities:
+  - uid: 2817
+    components:
+    - type: Transform
+      pos: -26.5,35.5
+      parent: 2
+  - uid: 2949
+    components:
+    - type: Transform
+      pos: -22.5,27.5
+      parent: 2
   - uid: 19691
     components:
     - type: Transform
@@ -137181,6 +137192,44 @@ entities:
       fixtures: {}
 - proto: SignalButtonDirectional
   entities:
+  - uid: 12003
+    components:
+    - type: MetaData
+      desc: Switches off the lights to let you get some shut-eye.
+      name: signal button (lights)
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 40.5,-12.5
+      parent: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        18893:
+        - - Pressed
+          - Toggle
+        18894:
+        - - Pressed
+          - Toggle
+    - type: Fixtures
+      fixtures: {}
+  - uid: 18377
+    components:
+    - type: MetaData
+      desc: Switches off the lights to let you get some shut-eye.
+      name: signal button (lights)
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 35.5,-12.5
+      parent: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        18896:
+        - - Pressed
+          - Toggle
+        18895:
+        - - Pressed
+          - Toggle
+    - type: Fixtures
+      fixtures: {}
   - uid: 20527
     components:
     - type: MetaData
@@ -137276,44 +137325,6 @@ entities:
         160:
         - - Pressed
           - DoorBolt
-    - type: Fixtures
-      fixtures: {}
-  - uid: 20532
-    components:
-    - type: MetaData
-      desc: Switches off the lights to let you get some shut-eye.
-      name: signal button (lights)
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 39,-14.5
-      parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        18894:
-        - - Pressed
-          - Toggle
-        18893:
-        - - Pressed
-          - Toggle
-    - type: Fixtures
-      fixtures: {}
-  - uid: 20533
-    components:
-    - type: MetaData
-      desc: Switches off the lights to let you get some shut-eye.
-      name: signal button (lights)
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 34,-14.5
-      parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        18896:
-        - - Pressed
-          - Toggle
-        18895:
-        - - Pressed
-          - Toggle
     - type: Fixtures
       fixtures: {}
   - uid: 20534
@@ -147820,16 +147831,6 @@ entities:
     components:
     - type: Transform
       pos: 39.5,-11.5
-      parent: 2
-  - uid: 22095
-    components:
-    - type: Transform
-      pos: 39.5,-13.5
-      parent: 2
-  - uid: 22096
-    components:
-    - type: Transform
-      pos: 34.5,-10.5
       parent: 2
   - uid: 22097
     components:
@@ -162751,6 +162752,11 @@ entities:
       fixtures: {}
 - proto: WaterCooler
   entities:
+  - uid: 8267
+    components:
+    - type: Transform
+      pos: -19.5,28.5
+      parent: 2
   - uid: 24946
     components:
     - type: Transform
@@ -162780,11 +162786,6 @@ entities:
     components:
     - type: Transform
       pos: 9.5,-64.5
-      parent: 2
-  - uid: 24952
-    components:
-    - type: Transform
-      pos: -17.5,28.5
       parent: 2
 - proto: WaterTankFull
   entities:
