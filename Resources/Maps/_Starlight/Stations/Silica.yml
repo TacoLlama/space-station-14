@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.1.0
   forkId: ""
   forkVersion: ""
-  time: 10/05/2025 18:22:37
-  entityCount: 25242
+  time: 10/05/2025 18:48:38
+  entityCount: 25252
 maps:
 - 1
 grids:
@@ -12634,7 +12634,7 @@ entities:
       pos: -29.5,-12.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -81113.88
+      secondsUntilStateChange: -81407.336
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12646,7 +12646,7 @@ entities:
       pos: 30.5,-28.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -81120.38
+      secondsUntilStateChange: -81413.836
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12658,7 +12658,7 @@ entities:
       pos: 30.5,-24.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -81121.08
+      secondsUntilStateChange: -81414.53
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -13809,7 +13809,7 @@ entities:
       pos: 36.5,0.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -172817.2
+      secondsUntilStateChange: -173110.66
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -27710,6 +27710,46 @@ entities:
       parent: 2
 - proto: CableApcExtension
   entities:
+  - uid: 1423
+    components:
+    - type: Transform
+      pos: 1.5,26.5
+      parent: 2
+  - uid: 1424
+    components:
+    - type: Transform
+      pos: 1.5,27.5
+      parent: 2
+  - uid: 1439
+    components:
+    - type: Transform
+      pos: 1.5,30.5
+      parent: 2
+  - uid: 1446
+    components:
+    - type: Transform
+      pos: 1.5,29.5
+      parent: 2
+  - uid: 1496
+    components:
+    - type: Transform
+      pos: 1.5,28.5
+      parent: 2
+  - uid: 1497
+    components:
+    - type: Transform
+      pos: 2.5,30.5
+      parent: 2
+  - uid: 1499
+    components:
+    - type: Transform
+      pos: -9.5,34.5
+      parent: 2
+  - uid: 1501
+    components:
+    - type: Transform
+      pos: 0.5,34.5
+      parent: 2
   - uid: 2952
     components:
     - type: Transform
@@ -124887,6 +124927,12 @@ entities:
       parent: 2
 - proto: Poweredlight
   entities:
+  - uid: 1515
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 0.5,31.5
+      parent: 2
   - uid: 18606
     components:
     - type: Transform
@@ -127470,6 +127516,12 @@ entities:
       parent: 2
 - proto: PoweredWarmSmallLight
   entities:
+  - uid: 1508
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 0.5,33.5
+      parent: 2
   - uid: 19056
     components:
     - type: Transform
