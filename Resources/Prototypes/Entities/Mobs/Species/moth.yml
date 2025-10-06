@@ -37,7 +37,7 @@
     accent: zombieMoth
   - type: Speech
     speechVerb: Moth
-    allowedEmotes: ['Chitter', 'Squeak']
+    allowedEmotes: ['Chitter', 'Squeak', 'FlapWings'] # Starlight: Ported wing flap sound from Goobstation
   - type: TypingIndicator
     proto: moth
   - type: Butcherable
