@@ -16996,5 +16996,72 @@ Entries:
   id: 186400
   time: '2025-10-05T20:45:43.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1864
+- author: CawsForConcern
+  changes:
+  - message: (Silica) Drain in Chemistry
+    type: Add
+  id: 186200
+  time: '2025-10-06T14:59:24.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1862
+- author: CawsForConcern
+  changes:
+  - message: (Silica) Materials silo to Cargo Bay
+    type: Add
+  id: 186201
+  time: '2025-10-06T14:59:24.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1862
+- author: CawsForConcern
+  changes:
+  - message: (Silica) Extra lighting in Science around the kitchen and Cargo Tunnel
+    type: Add
+  id: 186202
+  time: '2025-10-06T14:59:24.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1862
+- author: CawsForConcern
+  changes:
+  - message: (Silica) Trimmed out a sticky-outty bit on the Cargo Cove at the request
+      of many Cargo pilots
+    type: Tweak
+  id: 186203
+  time: '2025-10-06T14:59:24.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1862
+- author: CawsForConcern
+  changes:
+  - message: (Silica) Moved the cargo bin, makes it less inconvenient to throw resources
+      across the bay to the autolathe
+    type: Tweak
+  id: 186204
+  time: '2025-10-06T14:59:24.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1862
+- author: CawsForConcern
+  changes:
+  - message: (Silica) Disposal bin wasn't connected to disposals network oops
+    type: Fix
+  id: 186205
+  time: '2025-10-06T14:59:24.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1862
+- author: CawsForConcern
+  changes:
+  - message: (Silica) GenPop's oven now correctly has a stove on top of it
+    type: Fix
+  id: 186206
+  time: '2025-10-06T14:59:24.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1862
+- author: CawsForConcern
+  changes:
+  - message: (Silica) Dorms 1 & 2's directional buttons were always 'out of range'
+      and could not be pressed
+    type: Fix
+  id: 186207
+  time: '2025-10-06T14:59:24.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1862
+- author: CawsForConcern
+  changes:
+  - message: (Silica) Dorm 4's air vent and scrubbers were not hooked up to distribution/waste
+      network
+    type: Fix
+  id: 186208
+  time: '2025-10-06T14:59:24.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1862
 Order: -1
 
