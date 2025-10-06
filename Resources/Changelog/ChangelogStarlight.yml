@@ -17152,5 +17152,12 @@ Entries:
   id: 170700
   time: '2025-10-06T15:40:41.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1707
+- author: redmushie
+  changes:
+  - message: Added insulated gloves and t-ray scanners to Atmospheric Technician lockers
+    type: Tweak
+  id: 180100
+  time: '2025-10-06T15:31:29.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1801
 Order: -1
 
