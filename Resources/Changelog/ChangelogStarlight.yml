@@ -17188,5 +17188,13 @@ Entries:
   id: 187000
   time: '2025-10-06T14:58:46.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1870
+- author: walksanatora
+  changes:
+  - message: Tower of Babbel can now be reverted by destroying the tower(s) the wizard
+      places on the station.
+    type: Tweak
+  id: 174300
+  time: '2025-10-06T15:16:54.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1743
 Order: -1
 
