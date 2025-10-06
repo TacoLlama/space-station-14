@@ -17123,5 +17123,19 @@ Entries:
   id: 183101
   time: '2025-10-06T15:23:41.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1831
+- author: CawsForConcern
+  changes:
+  - message: (Oasis) Salvage Ticket Machine
+    type: Add
+  id: 179200
+  time: '2025-10-06T15:26:25.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1792
+- author: CawsForConcern
+  changes:
+  - message: (Oasis) Mining Ticket Machine
+    type: Add
+  id: 179201
+  time: '2025-10-06T15:26:25.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1792
 Order: -1
 
