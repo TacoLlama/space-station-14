@@ -17203,5 +17203,13 @@ Entries:
   id: 179500
   time: '2025-10-06T15:25:35.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1795
+- author: Rinary
+  changes:
+  - message: Added a lot of new Subtypes(Paints) for various borg types. (Some may
+      cost money)
+    type: Add
+  id: 180700
+  time: '2025-10-06T15:38:12.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1807
 Order: -1
 
