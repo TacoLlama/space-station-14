@@ -17174,5 +17174,12 @@ Entries:
   id: 185400
   time: '2025-10-04T22:32:19.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1854
+- author: Vonte
+  changes:
+  - message: Fixed BSO spawning without a survival kit cause I'm stupid
+    type: Fix
+  id: 182000
+  time: '2025-10-06T15:10:16.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1820
 Order: -1
 
