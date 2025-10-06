@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using Content.Client._Afterlight.Silicons.Borgs.UI;
+using Content.Client._Afterlight.Silicons.Borgs.UI; // Afterlight
 using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Shared._Afterlight.Prototypes;
