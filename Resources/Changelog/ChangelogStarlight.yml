@@ -17137,5 +17137,13 @@ Entries:
   id: 179201
   time: '2025-10-06T15:26:25.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1792
+- author: STARLIGHT TEAM
+  changes:
+  - message: NullLink has received authorization, which means it’s ready for integration
+      with other servers.
+    type: Tweak
+  id: 179300
+  time: '2025-10-06T15:26:37.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1793
 Order: -1
 
