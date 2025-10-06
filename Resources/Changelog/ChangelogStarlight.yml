@@ -17196,5 +17196,12 @@ Entries:
   id: 174300
   time: '2025-10-06T15:16:54.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1743
+- author: Way
+  changes:
+  - message: New basic set of desert themed decals for mappers to use. Cacti and bushes.
+    type: Add
+  id: 179500
+  time: '2025-10-06T15:25:35.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1795
 Order: -1
 
