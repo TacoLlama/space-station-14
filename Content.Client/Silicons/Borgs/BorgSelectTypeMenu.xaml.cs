@@ -1,10 +1,10 @@
 ﻿using System.Linq;
-using Content.Client._Afterlight.Silicons.Borgs.UI;
+using Content.Client._Afterlight.Silicons.Borgs.UI; // Afterlight
 using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Systems.Guidebook;
-using Content.Shared._Afterlight.Prototypes;
-using Content.Shared._Afterlight.Silicons;
-using Content.Shared._Afterlight.Silicons.Borgs;
+using Content.Shared._Afterlight.Prototypes; // Afterlight
+using Content.Shared._Afterlight.Silicons; // Afterlight
+using Content.Shared._Afterlight.Silicons.Borgs; // Afterlight
 using Content.Shared.Guidebook;
 using Content.Shared.Silicons.Borgs;
 using Content.Shared.Silicons.Borgs.Components;
@@ -57,10 +57,7 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
         HelpGuidebookIds = GuidebookEntries;
 
         // Afterlight - borg subtypes
-        ChassisSpriteSelection.SubtypeSelected += () =>
-        {
-            ConfirmTypeButton.Disabled = false;
-        };
+        ChassisSpriteSelection.SubtypeSelected += () => ConfirmTypeButton.Disabled = false;
         // Afterlight end
     }
 
@@ -72,17 +69,17 @@ public sealed partial class BorgSelectTypeMenu : FancyWindow
         InfoPlaceholder.Visible = false;
         // ConfirmTypeButton.Disabled = false; Starlight
 
-        NameLabel.Text = PrototypeName(prototype);
-        DescriptionLabel.Text = Loc.GetString($"borg-type-{prototype.ID}-desc");
-        ChassisView.SetPrototype(prototype.DummyPrototype);
-
         // Afterlight - borg subtype
         if (_selectedBorgType != null)
         {
-            ConfirmTypeButton.Disabled = true;
             ChassisSpriteSelection.Update(_selectedBorgType);
+            ConfirmTypeButton.Disabled = ChassisSpriteSelection.SubtypePrototype == null;
         }
         // Afterlight end
+
+        NameLabel.Text = PrototypeName(prototype);
+        DescriptionLabel.Text = Loc.GetString($"borg-type-{prototype.ID}-desc");
+        ChassisView.SetPrototype(prototype.DummyPrototype);
     }
 
     private void ConfirmButtonPressed(BaseButton.ButtonEventArgs obj)

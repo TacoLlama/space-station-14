@@ -1,6 +1,6 @@
-﻿using Content.Shared._Afterlight.Silicons;
-using Content.Shared._Afterlight.Silicons.Borgs;
-using Content.Shared.Silicons.Borgs.Components;
+﻿using Content.Shared._Afterlight.Silicons; // Afterlight
+using Content.Shared._Afterlight.Silicons.Borgs; // Afterlight
+using Content.Shared.Silicons.Borgs.Components; // Afterlight
 using JetBrains.Annotations;
 using Robust.Client.UserInterface;
 
@@ -27,7 +27,7 @@ public sealed class BorgSelectTypeUserInterface : BoundUserInterface
         base.Open();
 
         _menu = this.CreateWindow<BorgSelectTypeMenu>();
-        _menu.ConfirmedBorgType += prototype => SendPredictedMessage(new BorgSelectTypeMessage(prototype));
         _menu.ConfirmBorgSubtype += subtypePrototype => SendPredictedMessage(new BorgSelectSubtypeMessage(subtypePrototype?.ID)); // Afterlight - borg subtypes
+        _menu.ConfirmedBorgType += prototype => SendPredictedMessage(new BorgSelectTypeMessage(prototype));
     }
 }

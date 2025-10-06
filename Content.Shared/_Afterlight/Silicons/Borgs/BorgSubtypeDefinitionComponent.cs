@@ -47,19 +47,19 @@ public sealed partial class BorgSubtypeDefinitionComponent : Component
     [DataField(required: true), AutoNetworkedField]
     public PrototypeLayerData[] LayerData;
 
+    [DataField]
+    public string SpriteHasMindState { get; set; } = "borg_e";
 
-    [DataField(required: true), AutoNetworkedField]
-    public string SpriteHasMindState;
+    [DataField]
+    public string SpriteNoMindState { get; set; } = "borg_e_r";
 
-    [DataField(required: true), AutoNetworkedField]
-    public string SpriteNoMindState;
+    [DataField]
+    public string? SpriteBodyState;
 
-    [DataField, AutoNetworkedField] public string? SpriteBodyState;
+    [DataField]
+    public string SpriteToggleLightState { get; set; } = "borg_l";
 
     [DataField, AutoNetworkedField] public Vector2? Offset;
-
-    [DataField(required: true), AutoNetworkedField]
-    public EntProtoId DummyPrototype;
 
     [DataField, AutoNetworkedField] public string PetSuccessString = "petting-success-generic-cyborg";
     [DataField, AutoNetworkedField] public string PetFailureString = "petting-failure-generic-cyborg";
@@ -75,4 +75,7 @@ public sealed partial class BorgSubtypeDefinitionComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public string? SpriteBodyMovementState { get; set; }
+
+    [DataField]
+    public int? Price { get; set; }
 }

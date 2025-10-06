@@ -16,7 +16,8 @@
                          MinHeight="96">
             <BoxContainer Name="OptionsContainer"
                           Orientation="Horizontal"
-                          SeparationOverride="4"/>
+                          SeparationOverride="4"
+                          MinHeight="86"/> <!-- -10 from scroll -->
         </ScrollContainer>
 
     </BoxContainer>
