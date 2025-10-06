@@ -17063,5 +17063,12 @@ Entries:
   id: 186208
   time: '2025-10-06T14:59:24.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1862
+- author: STARLIGHT TEAM
+  changes:
+  - message: Fixed typos in Shadekin guidebook.
+    type: Fix
+  id: 186100
+  time: '2025-10-06T15:00:13.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1861
 Order: -1
 
