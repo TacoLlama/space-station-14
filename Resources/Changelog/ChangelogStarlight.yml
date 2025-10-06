@@ -17109,5 +17109,19 @@ Entries:
   id: 180400
   time: '2025-10-06T15:19:13.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1804
+- author: CrazyPhantom
+  changes:
+  - message: Lets AI turret panel choose from all normal access's
+    type: Tweak
+  id: 183100
+  time: '2025-10-06T15:23:41.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1831
+- author: CrazyPhantom
+  changes:
+  - message: Adds a silicon turret panel that has only Silicon access to choose from
+    type: Add
+  id: 183101
+  time: '2025-10-06T15:23:41.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1831
 Order: -1
 
