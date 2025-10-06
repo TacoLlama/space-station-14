@@ -17070,5 +17070,13 @@ Entries:
   id: 186100
   time: '2025-10-06T15:00:13.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1861
+- author: CrazyPhantom
+  changes:
+  - message: Cyborgs, MMI, Positronics and pAI's are now correctly blinded while in
+      lockers and disposal bins
+    type: Fix
+  id: 183500
+  time: '2025-10-06T15:01:40.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1835
 Order: -1
 
