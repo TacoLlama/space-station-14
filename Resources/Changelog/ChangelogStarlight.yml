@@ -17211,5 +17211,12 @@ Entries:
   id: 180700
   time: '2025-10-06T15:38:12.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1807
+- author: CrazyPhantom
+  changes:
+  - message: Adds revs to vote pool!
+    type: Add
+  id: 178900
+  time: '2025-10-06T15:27:42.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1789
 Order: -1
 
