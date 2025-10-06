@@ -364,7 +364,9 @@
   name: chat-emote-name-flap-wings
   category: Vocal
   available: false
-  icon: /Textures/_Starlight/Actions/moth.rsi/flap-wings.png
+  icon:
+    sprite: _Starlight/Actions/moth.rsi
+    state: flap_wings
   whitelist:
     components:
       - Vocal
