@@ -252,6 +252,7 @@
   - type: CyborgSparkEffect
   - type: StationAIShunt
   - type: Crawler
+  - type: Blindable
   #endregion
 
 - type: entity
