@@ -17159,5 +17159,12 @@ Entries:
   id: 180100
   time: '2025-10-06T15:31:29.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1801
+- author: ScarletLightweaver
+  changes:
+  - message: Added a new cloak for a certain job
+    type: Add
+  id: 183300
+  time: '2025-10-06T15:03:32.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1833
 Order: -1
 
