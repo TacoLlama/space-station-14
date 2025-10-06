@@ -358,7 +358,6 @@
   - rattles!
   - rattles?
 
-# Starlight: Port wing flap sound from Goob
 - type: emote
   id: FlapWings
   name: chat-emote-name-flap-wings

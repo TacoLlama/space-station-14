@@ -493,7 +493,7 @@
       path: /Audio/Voice/Moth/moth_chitter.ogg
     Squeak:
       path: /Audio/Voice/Moth/moth_squeak.ogg
-    FlapWings: # Starlight: Ported wing flap sound from Goobstation
+    FlapWings:
       path: /Audio/_Starlight/Voice/Moth/moth_flapwings.ogg
     Weh:
       collection: Weh
