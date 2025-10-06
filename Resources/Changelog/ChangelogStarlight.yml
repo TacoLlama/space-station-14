@@ -17181,5 +17181,12 @@ Entries:
   id: 182000
   time: '2025-10-06T15:10:16.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1820
+- author: Trosling
+  changes:
+  - message: Abductors are now expressly forbidden from defending the station
+    type: Tweak
+  id: 187000
+  time: '2025-10-06T14:58:46.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1870
 Order: -1
 
