@@ -17218,5 +17218,12 @@ Entries:
   id: 178900
   time: '2025-10-06T15:27:42.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1789
+- author: redmushie
+  changes:
+  - message: Moths can now flap their wings!
+    type: Add
+  id: 187100
+  time: '2025-10-06T17:22:22.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1871
 Order: -1
 
