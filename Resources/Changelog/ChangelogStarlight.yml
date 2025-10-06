@@ -17085,5 +17085,20 @@ Entries:
   id: 182800
   time: '2025-10-06T15:05:51.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1828
+- author: aneyeforsecrets
+  changes:
+  - message: Criminal records consoles once again track shift history entries - including
+      auto-logged status changes - with a compact layout that fits smaller screens.
+    type: Fix
+  id: 182100
+  time: '2025-10-06T15:13:07.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1821
+- author: aneyeforsecrets
+  changes:
+  - message: Security records can be searched for role and species again.
+    type: Fix
+  id: 182101
+  time: '2025-10-06T15:13:07.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1821
 Order: -1
 
