@@ -17100,5 +17100,14 @@ Entries:
   id: 182101
   time: '2025-10-06T15:13:07.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/1821
+- author: RoadTrain (porting), lunarcomets (initial PR), Veritable-Calamity (bugfix
+    in the PR)
+  changes:
+  - message: Framework for borg subtypes. Does not include any actual subtypes...
+      yet.
+    type: Add
+  id: 180400
+  time: '2025-10-06T15:19:13.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/1804
 Order: -1
 
